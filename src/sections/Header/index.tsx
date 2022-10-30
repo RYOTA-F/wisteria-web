@@ -34,6 +34,8 @@ const Header: FC<IHeader> = ({ onMoveMain, onMoveCareer, onMoveSkill }) => {
         return (window.location.href = PAGE.BLOG);
       case "#src":
         return (window.location.href = PAGE.SRC);
+      case "#contact":
+        return (window.location.href = PAGE.CONTACT);
     }
   };
 

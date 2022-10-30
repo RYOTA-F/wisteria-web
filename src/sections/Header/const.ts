@@ -10,7 +10,7 @@ export const MENU_LIST = [
   { MENU_TITLE: "スキル", ID: `${SECTION_ID.SKILL}` },
   { MENU_TITLE: "ブログ", ID: `${SECTION_ID.BLOG}` },
   { MENU_TITLE: "ソースコード", ID: `${SECTION_ID.SRC}` },
-  { MENU_TITLE: "お問合せ", ID: "#contact" },
+  { MENU_TITLE: "お問合せ", ID: `${SECTION_ID.CONTACT}` },
 ] as const;
 
 export const MENU_LIST_IDS = MENU_LIST.map((v) => v.ID);

@@ -4,6 +4,7 @@ const SECTION_ID = {
   SKILL: "#skill",
   BLOG: "#blog",
   SRC: "#src",
+  CONTACT: "#contact",
 } as const;
 
 export default SECTION_ID;
