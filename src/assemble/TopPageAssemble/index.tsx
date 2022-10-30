@@ -4,6 +4,7 @@ import Header from "../../sections/Header";
 import Main from "../../sections/Main";
 import Career from "../../sections/Career";
 import Skill from "../../sections/Skill";
+import Footer from "../../sections/Footer";
 
 const TopPageAssemble: FC = () => {
   const onMoveMain = () => console.log("hoge");
@@ -22,6 +23,7 @@ const TopPageAssemble: FC = () => {
       <Main />
       <Career />
       <Skill />
+      <Footer />
     </>
   );
 };
