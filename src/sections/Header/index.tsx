@@ -1,6 +1,7 @@
 import type { FC } from "react";
 /* const */
 import { LOGO_URL, LOGO_SRC, MENU_LIST, MENU_LIST_IDS } from "./const";
+import { PAGE } from "../../const/page";
 /* styles */
 import {
   Wrapper,
@@ -30,7 +31,7 @@ const Header: FC<IHeader> = ({ onMoveMain, onMoveCareer, onMoveSkill }) => {
       case "#skill":
         return onMoveSkill ? onMoveSkill() : undefined;
       case "#blog":
-        return (window.location.href = "/blog");
+        return (window.location.href = PAGE.BLOG);
     }
   };
 
