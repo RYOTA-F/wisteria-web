@@ -59,8 +59,10 @@ export const MenuItem = styled.li`
 `;
 
 export const MenuLink = styled.a`
-  display: inline-block;
-  text-decoration: none;
+  display: block;
+  height: 100%;
+  line-height: ${HEADER_HEIGHT}px;
   width: 100%;
+  text-decoration: none;
   padding: 0 15px;
 `;
