@@ -1,6 +1,7 @@
 import type { FC } from "react";
 /* components */
 import Header from "../../sections/Header";
+import Main from "../../sections/Main";
 
 const TopPageAssemble: FC = () => {
   const onMoveMain = () => console.log("hoge");
@@ -16,6 +17,7 @@ const TopPageAssemble: FC = () => {
         onMoveSkill={onMoveSkill}
         onMoveBlog={onMoveBlog}
       />
+      <Main />
     </>
   );
 };
