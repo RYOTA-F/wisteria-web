@@ -2,6 +2,7 @@ import type { FC } from "react";
 /* components */
 import Header from "../../sections/Header";
 import Main from "../../sections/Main";
+import Career from "../../sections/Career";
 
 const TopPageAssemble: FC = () => {
   const onMoveMain = () => console.log("hoge");
@@ -18,6 +19,7 @@ const TopPageAssemble: FC = () => {
         onMoveBlog={onMoveBlog}
       />
       <Main />
+      <Career />
     </>
   );
 };
