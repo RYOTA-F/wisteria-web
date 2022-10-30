@@ -15,22 +15,22 @@ import {
 type TMenuListIds = typeof MENU_LIST_IDS[number];
 
 export interface IHeader {
-  onMoveMain: () => void;
-  onMoveCareer: () => void;
-  onMoveSkill: () => void;
+  onMoveMain?: () => void;
+  onMoveCareer?: () => void;
+  onMoveSkill?: () => void;
 }
 
 const Header: FC<IHeader> = ({ onMoveMain, onMoveCareer, onMoveSkill }) => {
   const onClickLink = (id: TMenuListIds) => {
     switch (id) {
       case "#main":
-        return onMoveMain();
+        return onMoveMain ? onMoveMain() : undefined;
       case "#career":
-        return onMoveCareer();
+        return onMoveCareer ? onMoveCareer() : undefined;
       case "#skill":
-        return onMoveSkill();
+        return onMoveSkill ? onMoveSkill() : undefined;
       case "#blog":
-        return;
+        return (window.location.href = "/blog");
     }
   };
 
