@@ -32,6 +32,8 @@ const Header: FC<IHeader> = ({ onMoveMain, onMoveCareer, onMoveSkill }) => {
         return onMoveSkill ? onMoveSkill() : undefined;
       case "#blog":
         return (window.location.href = PAGE.BLOG);
+      case "#src":
+        return (window.location.href = PAGE.SRC);
     }
   };
 

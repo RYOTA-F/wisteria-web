@@ -1,7 +1,9 @@
 const SECTION_ID = {
-  MAIN: '#main',
-  CAREER: '#career',
-  BLOG: '#blog',
-} as const
+  MAIN: "#main",
+  CAREER: "#career",
+  SKILL: "#skill",
+  BLOG: "#blog",
+  SRC: "#src",
+} as const;
 
-export default SECTION_ID
+export default SECTION_ID;
