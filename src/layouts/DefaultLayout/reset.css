@@ -349,3 +349,11 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+  * Custom CSS
+  */
+ul {
+  margin: 0;
+  padding: 0;
+}

@@ -31,29 +31,34 @@ export const Logo = styled.img`
 `;
 
 export const MenuList = styled.ul`
-  margin: 0;
-  padding: 0;
   display: flex;
+  justify-content: end;
+  width: 70%;
   height: 100%;
   text-align: center;
   list-style-type: none;
   position: relative;
+  user-select: none;
 `;
 
-export const MenuItem = styled.li``;
-
-export const MenuLink = styled.a`
+export const MenuItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 15px;
-  width: 100%;
+  align-items: center;
   height: 100%;
   color: ${COLOR.GRAY_SCALE.BLACK};
-  text-decoration: none;
 
   :hover {
+    cursor: pointer;
     color: ${COLOR.GRAY_SCALE.WHITE};
     background-color: ${COLOR.BLUE_GROUP.SKY};
   }
+`;
+
+export const MenuLink = styled.a`
+  display: inline-block;
+  text-decoration: none;
+  width: 100%;
+  padding: 0 15px;
 `;
