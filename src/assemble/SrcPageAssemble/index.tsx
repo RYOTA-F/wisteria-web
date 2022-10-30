@@ -2,13 +2,13 @@ import type { FC } from "react";
 /* components */
 import Header from "../../sections/Header";
 import Footer from "../../sections/Footer";
-import Main from "../../sections/Main";
+import Src from "../../sections/Src";
 
 const SrcPageAssemble: FC = () => {
   return (
     <>
       <Header />
-      <Main />
+      <Src />
       <Footer />
     </>
   );
