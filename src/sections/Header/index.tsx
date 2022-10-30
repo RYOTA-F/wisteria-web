@@ -18,15 +18,9 @@ export interface IHeader {
   onMoveMain: () => void;
   onMoveCareer: () => void;
   onMoveSkill: () => void;
-  onMoveBlog: () => void;
 }
 
-const Header: FC<IHeader> = ({
-  onMoveMain,
-  onMoveCareer,
-  onMoveSkill,
-  onMoveBlog,
-}) => {
+const Header: FC<IHeader> = ({ onMoveMain, onMoveCareer, onMoveSkill }) => {
   const onClickLink = (id: TMenuListIds) => {
     switch (id) {
       case "#main":
@@ -36,7 +30,7 @@ const Header: FC<IHeader> = ({
       case "#skill":
         return onMoveSkill();
       case "#blog":
-        return onMoveBlog();
+        return;
     }
   };
 
