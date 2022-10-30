@@ -1,6 +1,6 @@
 import type { FC } from "react";
 /* const */
-import { LOGO_URL, LOGO_SRC, MENU_LIST, MENU_LIST_IDS } from "./const";
+import { LOGO_SRC, MENU_LIST } from "../../const/menu";
 import { PAGE } from "../../const/page";
 /* styles */
 import {
@@ -13,8 +13,6 @@ import {
   MenuLink,
 } from "./styles";
 
-type TMenuListIds = typeof MENU_LIST_IDS[number];
-
 export interface IHeader {
   onMoveMain?: () => void;
   onMoveCareer?: () => void;
@@ -22,37 +20,51 @@ export interface IHeader {
 }
 
 const Header: FC<IHeader> = ({ onMoveMain, onMoveCareer, onMoveSkill }) => {
-  const onClickLink = (id: TMenuListIds) => {
-    switch (id) {
-      case "#main":
-        return onMoveMain ? onMoveMain() : undefined;
-      case "#career":
-        return onMoveCareer ? onMoveCareer() : undefined;
-      case "#skill":
-        return onMoveSkill ? onMoveSkill() : undefined;
-      case "#blog":
-        return (window.location.href = PAGE.BLOG);
-      case "#src":
-        return (window.location.href = PAGE.SRC);
-      case "#contact":
-        return (window.location.href = PAGE.CONTACT);
-    }
-  };
+  const onClickTop = () =>
+    onMoveMain ? onMoveMain() : (window.location.href = PAGE.TOP);
+  const onClickCareer = () =>
+    onMoveCareer ? onMoveCareer() : (window.location.href = PAGE.TOP);
+  const onClickSkill = () =>
+    onMoveSkill ? onMoveSkill() : (window.location.href = PAGE.TOP);
+  const onClickBlog = () => (window.location.href = PAGE.BLOG);
+  const onClickSrc = () => (window.location.href = PAGE.SRC);
+  const onClickContact = () => (window.location.href = PAGE.CONTACT);
 
   return (
     <Wrapper>
       <Inner>
-        <LogoWrapper href={LOGO_URL}>
+        <LogoWrapper href={PAGE.TOP}>
           <Logo src={LOGO_SRC} />
         </LogoWrapper>
         <MenuList>
-          {MENU_LIST.map((v, i) => (
-            <MenuItem key={i}>
-              <MenuLink onClick={() => onClickLink(v.ID)}>
-                {v.MENU_TITLE}
-              </MenuLink>
-            </MenuItem>
-          ))}
+          {/* TOP */}
+          <MenuItem>
+            <MenuLink onClick={onClickTop}>{MENU_LIST.MAIN.TITLE}</MenuLink>
+          </MenuItem>
+          {/* CAREER */}
+          <MenuItem>
+            <MenuLink onClick={onClickCareer}>
+              {MENU_LIST.CAREER.TITLE}
+            </MenuLink>
+          </MenuItem>
+          {/* SKILL */}
+          <MenuItem>
+            <MenuLink onClick={onClickSkill}>{MENU_LIST.SKILL.TITLE}</MenuLink>
+          </MenuItem>
+          {/* BLOG */}
+          <MenuItem>
+            <MenuLink onClick={onClickBlog}>{MENU_LIST.BLOG.TITLE}</MenuLink>
+          </MenuItem>
+          {/* SRC */}
+          <MenuItem>
+            <MenuLink onClick={onClickSrc}>{MENU_LIST.SRC.TITLE}</MenuLink>
+          </MenuItem>
+          {/* CONTACT */}
+          <MenuItem>
+            <MenuLink onClick={onClickContact}>
+              {MENU_LIST.CONTACT.TITLE}
+            </MenuLink>
+          </MenuItem>
         </MenuList>
       </Inner>
     </Wrapper>
