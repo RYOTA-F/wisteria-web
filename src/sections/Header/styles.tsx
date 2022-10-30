@@ -1,10 +1,12 @@
 import styled from "@emotion/styled";
+/* const */
 import COLOR from "../../const/color";
+import { HEADER_HEIGHT } from "../../const/size";
 
 export const Wrapper = styled.header`
   position: fixed;
   width: 100%;
-  height: 80px;
+  height: ${HEADER_HEIGHT}px;
   background-color: ${COLOR.GRAY_SCALE.WHITE};
 `;
 
@@ -17,8 +19,8 @@ export const Inner = styled.div`
 `;
 
 export const LogoWrapper = styled.a`
-  height: 80px;
-  width: 80px;
+  height: ${HEADER_HEIGHT}px;
+  width: ${HEADER_HEIGHT}px;
   padding: 10px;
   cursor: pointer;
 `;
