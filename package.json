@@ -15,5 +15,8 @@
     "@astrojs/svelte": "^1.0.2",
     "astro": "^1.6.0",
     "svelte": "^3.46.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
   }
 }
