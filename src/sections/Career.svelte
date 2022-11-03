@@ -1,12 +1,12 @@
 <script lang="ts">
 </script>
 
-<section id="career" class="main">
+<section id="career" class="career">
   Career
 </section>
 
 <style>
-  .main {
+  .career {
     display: flex;
     align-items: center;
     justify-content: center;
