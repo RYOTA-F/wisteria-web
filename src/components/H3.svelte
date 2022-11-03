@@ -1,0 +1,13 @@
+<script lang="ts">
+</script>
+
+<h3 class="h3">
+  <slot />
+</h3>
+
+<style>
+  .h3 {
+    color: #7b7b7b;
+    font-size: 18px;
+  }
+</style>
