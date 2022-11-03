@@ -24,8 +24,18 @@ export const Wrapper = styled.button<{ isView: boolean }>`
       : css`
           opacity: 0;
           transition: 1s;
+          visibility: hidden;
         `}
   `}
+
+  :hover {
+    background-color: ${COLOR.GRAY_SCALE.WHITE};
+    transition: 0.2s;
+
+    & > div {
+      border-color: ${COLOR.BLUE_GROUP.SKY};
+    }
+  }
 `;
 
 export const InnerArrow = styled.div`
