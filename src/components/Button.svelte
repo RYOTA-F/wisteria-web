@@ -1,12 +1,15 @@
 <script lang="ts">
   export let onClick: () => void
+  export let href: string | undefined = undefined
 </script>
 
-<button on:click={onClick} class="button">
-  <span class="button__inner">
-    <slot />
-  </span>
-</button>
+<a href={href}>
+  <button on:click={onClick} class="button">
+    <span class="button__inner">
+      <slot />
+    </span>
+  </button>
+</a>
 
 <style>
   .button {
