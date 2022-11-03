@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<section class="main">
+<section id="main" class="main">
   Main
 </section>
 
