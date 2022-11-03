@@ -8,6 +8,7 @@ import Skill from '../sections/Skill.svelte'
 import Blog from '../sections/Blog.svelte'
 import Contact from '../sections/Contact.svelte'
 import Footer from '../sections/Footer.svelte'
+import ScrollButton from '../components/ScrollButton.svelte'
 ---
 
 <Layout title="Wisteria Web">
@@ -19,5 +20,7 @@ import Footer from '../sections/Footer.svelte'
     <Blog />
     <Contact />
     <Footer />
+
+    <ScrollButton client:load />
   </main>
 </Layout>
