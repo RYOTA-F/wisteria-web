@@ -23,15 +23,15 @@ const TopPageAssemble: FC = () => {
         onMoveCareer={onMoveCareer}
         onMoveSkill={onMoveSkill}
       />
-      <div ref={mainRef}>
+      <section ref={mainRef}>
         <Main />
-      </div>
-      <div ref={careerRef}>
+      </section>
+      <section ref={careerRef}>
         <Career />
-      </div>
-      <div ref={skillRef}>
+      </section>
+      <section ref={skillRef}>
         <Skill />
-      </div>
+      </section>
       <Footer />
 
       <ScrollButton isView={isViewScrollButton} onMoveMain={onMoveMain} />

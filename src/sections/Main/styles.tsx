@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import COLOR from "../../const/color";
 import { HEADER_HEIGHT } from "../../const/size";
 
-export const Wrapper = styled.main`
+export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
