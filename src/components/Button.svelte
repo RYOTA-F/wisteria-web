@@ -1,0 +1,41 @@
+<script lang="ts">
+  export let onClick: () => void
+</script>
+
+<button on:click={onClick} class="button">
+  <span class="button__inner">
+    <slot />
+  </span>
+</button>
+
+<style>
+  .button {
+    padding: 16px 40px;
+    color: #fff;
+    background-color: #709dd8;
+    border-radius: 9999px;
+    position: relative;
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+
+  .button__inner {
+    margin: 0 30px;
+  }
+  .button__inner:after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 12px;
+    width: 12px;
+    top: 50%;
+    right: 24px;
+    margin-top: -6px;
+    border-bottom: 4px solid #fff;
+    border-left: 4px solid #fff;
+    transform: rotate(225deg);
+    transition: border-color .3s,transform .3s;
+    transition: border-color .3s;
+  }
+</style>
