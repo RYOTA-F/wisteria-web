@@ -3,6 +3,10 @@ const SECTION = {
     TITLE: 'トップ',
     ID: '#main',
   },
+  ABOUT: {
+    TITLE: 'RYOTAについて',
+    ID: '#about',
+  },
   SERVICE: {
     TITLE: 'サービス',
     ID: '#service',
