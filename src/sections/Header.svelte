@@ -1,12 +1,15 @@
 <script lang="ts">
   import { MENU_LIST } from '../const/menu'
+  import PAGE from '../const/page';
 </script>
 
 <section class="header">
   <div class="headerContainer">
-    <div class="logoWrapper">
-      <img src="./svelte.png" alt="logo" class="logo" />
-    </div>
+    <a href={PAGE.TOP.PATH}>
+      <div class="logoWrapper">
+        <img src="./svelte.png" alt="logo" class="logo" />
+      </div>
+    </a>
     <ul class="menuList">
       <li class="menuItem">
         <a href={MENU_LIST.MAIN.ID} class="menuLink">

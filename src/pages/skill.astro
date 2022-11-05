@@ -2,10 +2,7 @@
 import Layout from '../layouts/Layout.astro'
 /* sections */
 import Header from '../sections/Header.svelte'
-import Main from '../sections/Main.svelte'
-import Servise from '../sections/Service.svelte'
-import Blog from '../sections/Blog.svelte'
-import Contact from '../sections/Contact.svelte'
+import Skill from '../sections/Skill.svelte'
 import Footer from '../sections/Footer.svelte'
 import ScrollButton from '../components/ScrollButton.svelte'
 ---
@@ -13,12 +10,8 @@ import ScrollButton from '../components/ScrollButton.svelte'
 <Layout title="Wisteria Web">
   <main>
     <Header />
-    <Main />
-    <Servise />
-    <Blog />
-    <Contact client:load />
+    <Skill />
     <Footer />
-
     <ScrollButton client:load />
   </main>
 </Layout>
