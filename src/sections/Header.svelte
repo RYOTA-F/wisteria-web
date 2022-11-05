@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { MENU_LIST } from '../const/menu'
+  import { MENU } from '../const/menu'
   import PAGE from '../const/page';
 </script>
 
@@ -11,36 +11,13 @@
       </div>
     </a>
     <ul class="menuList">
-      <li class="menuItem">
-        <a href={MENU_LIST.MAIN.ID} class="menuLink">
-          {MENU_LIST.MAIN.TITLE}
-        </a>
-      </li>
-      <li class="menuItem">
-        <a href={MENU_LIST.SERVICE.ID} class="menuLink">
-          {MENU_LIST.SERVICE.TITLE}
-        </a>
-      </li>
-      <li class="menuItem">
-        <a href={MENU_LIST.CAREER.ID} class="menuLink">
-          {MENU_LIST.CAREER.TITLE}
-        </a>
-      </li>
-      <li class="menuItem">
-        <a href={MENU_LIST.SKILL.ID} class="menuLink">
-          {MENU_LIST.SKILL.TITLE}
-        </a>
-      </li>
-      <li class="menuItem">
-        <a href={MENU_LIST.BLOG.ID} class="menuLink">
-          {MENU_LIST.BLOG.TITLE}
-        </a>
-      </li>
-      <li class="menuItem">
-        <a href={MENU_LIST.CONTACT.ID} class="menuLink">
-          {MENU_LIST.CONTACT.TITLE}
-        </a>
-      </li>
+      {#each MENU as item}
+        <li class="menuItem">
+          <a href={item.ID} class="menuLink">
+            {item.TITLE}
+          </a>
+        </li>
+      {/each}
     </ul>
   </div>
 </section>
