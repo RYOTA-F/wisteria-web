@@ -11,12 +11,4 @@ export const MENU_LIST = {
   CONTACT: { TITLE: SECTION.CONTACT.TITLE, ID: `/${SECTION.CONTACT.ID}` },
 } as const
 
-export const MENU = [
-  MENU_LIST.MAIN,
-  MENU_LIST.ABOUT,
-  MENU_LIST.SERVICE,
-  MENU_LIST.CAREER,
-  MENU_LIST.SKILL,
-  MENU_LIST.BLOG,
-  MENU_LIST.CONTACT,
-] as const
+export const MENU = Object.values(MENU_LIST)
