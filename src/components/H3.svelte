@@ -9,5 +9,6 @@
   .h3 {
     color: #7b7b7b;
     font-size: 18px;
+    font-weight: 700;
   }
 </style>

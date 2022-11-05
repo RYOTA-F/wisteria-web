@@ -3,7 +3,7 @@
   export let href: string | undefined = undefined
 </script>
 
-<a href={href}>
+<a href={href} target="__brank">
   <button on:click={onClick} class="button">
     <span class="button__inner">
       <slot />

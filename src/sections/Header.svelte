@@ -43,6 +43,7 @@
     width: 100%;
     height: 80px;
     background-color: #fff;
+    z-index: 100;
   }
 
   .headerContainer {
