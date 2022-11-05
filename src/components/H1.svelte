@@ -7,7 +7,6 @@
 
 <style>
   .h1 {
-    color: #000;
     font-size: 52px;
   }
 </style>
