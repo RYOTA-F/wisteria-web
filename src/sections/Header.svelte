@@ -14,6 +14,11 @@
         </a>
       </li>
       <li class="menuItem">
+        <a href={MENU_LIST.SERVICE.ID} class="menuLink">
+          {MENU_LIST.SERVICE.TITLE}
+        </a>
+      </li>
+      <li class="menuItem">
         <a href={MENU_LIST.CAREER.ID} class="menuLink">
           {MENU_LIST.CAREER.TITLE}
         </a>
