@@ -30,7 +30,7 @@
   .description {
     margin-top: 24px;
     white-space: pre-wrap;
-    line-height: 1.5;
+    line-height: 1.8;
   }
 
   .itemContainer {

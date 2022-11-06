@@ -18,6 +18,8 @@
     width: 100%;
     height: 100vh;
     padding-top: 80px;
+    background-color: #709dd8;
+    color: #fff;
   }
 
   .typewriter__text{
@@ -33,12 +35,12 @@
   /* Animation */
   .typewriter__animation{
     animation: typewriter 4s steps(44) 1s 1 normal both,
-  blinkTextCursor 500ms steps(44) infinite normal;
+    blinkTextCursor 500ms steps(44) infinite normal;
   }
 
-  .siteName {
+  /* .siteName {
     color: #709dd8;
-  }
+  } */
   @keyframes typewriter{
     from{width: 0;}
     to{width: 24em;}
