@@ -27,7 +27,7 @@
     position: fixed;
     width: 100%;
     height: 80px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255, 0.6);
     z-index: 100;
   }
 

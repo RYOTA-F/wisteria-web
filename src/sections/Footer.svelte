@@ -37,7 +37,7 @@
   .footer {
     padding: 30px 0 0;
     color: #fff;
-    background-color: #709dd8;
+    background-color: #5e6c77;
     text-align: center;
   }
 
