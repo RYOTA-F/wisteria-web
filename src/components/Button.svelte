@@ -21,6 +21,9 @@
   }
   .button:hover {
     cursor: pointer;
+    color: #709dd8;
+    background-color: #fff;
+    transition: 0.5s;
   }
 
   .button__inner {
