@@ -26,7 +26,6 @@
 <style>
   .contact {
     width: 100%;
-    /* height: calc(100vh - 80px); */
     padding: 100px 0 160px;
     text-align: center;
     background-color: #f1f1f1;
