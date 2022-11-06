@@ -4,7 +4,7 @@ const SECTION = {
     ID: '#main',
   },
   ABOUT: {
-    TITLE: 'RYOTAについて',
+    TITLE: 'Wisteria Webについて',
     ID: '#about',
   },
   SERVICE: {
