@@ -1,1 +1,11 @@
-export type IconPettern = 'career' | 'skill'
+export type IconPettern =
+  | 'career'
+  | 'skill'
+  | 'react'
+  | 'vue'
+  | 'svelte'
+  | 'tsnode'
+  | 'ruby'
+  | 'golang'
+  | 'wordpress'
+  | 'shopify'

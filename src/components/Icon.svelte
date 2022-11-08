@@ -6,7 +6,7 @@
 </script>
 
 <div>
-  <img src={src} alt="logo" class="logo" />
+  <img src={src} alt="logo" />
 </div>
 
 <style>

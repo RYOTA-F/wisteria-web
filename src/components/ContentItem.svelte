@@ -1,16 +1,17 @@
 <script lang="ts">
+	import { string } from './../../node_modules/micromark/dev/lib/initialize/text.js';
   import Button from '../components/Button.svelte'
 
-  export let href: string | undefined = undefined
-  export let buttonText: string
-  export let onClick: () => void
+  export let href: string = ''
+  export let buttonText: string = ''
+  export let onClick: () => void = () => {}
 </script>
 
 <div class="contentItem">
   <slot />
   {#if buttonText}
     <div class="button">
-      <Button href={href} onClick={onClick} >{buttonText}</Button>
+      <Button href={href} onClick={ onClick } >{buttonText}</Button>
     </div>
   {/if}
 </div>
