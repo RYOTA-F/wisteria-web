@@ -1,34 +1,16 @@
 <script lang="ts">
-  import { MENU_LIST } from "../const/menu";
+  import { MENU } from "../const/menu";
 </script>
 
 <section class="footer">
   <ul class="footerMenu__list">
-    <li class="footerMenu__item">
-      <a href={MENU_LIST.MAIN.ID} class="footerMenu__link">
-        {MENU_LIST.MAIN.TITLE}
-      </a>
-    </li>
-    <li class="footerMenu__item">
-      <a href={MENU_LIST.CAREER.ID} class="footerMenu__link">
-        {MENU_LIST.CAREER.TITLE}
-      </a>
-    </li>
-    <li class="footerMenu__item">
-      <a href={MENU_LIST.SKILL.ID} class="footerMenu__link">
-        {MENU_LIST.SKILL.TITLE}
-      </a>
-    </li>
-    <li class="footerMenu__item">
-      <a href={MENU_LIST.BLOG.ID} class="footerMenu__link">
-        {MENU_LIST.BLOG.TITLE}
-      </a>
-    </li>
-    <li class="footerMenu__item">
-      <a href={MENU_LIST.CONTACT.ID} class="footerMenu__link">
-        {MENU_LIST.CONTACT.TITLE}
-      </a>
-    </li>
+    {#each MENU as item}
+      <li class="footerMenu__item">
+        <a href={item.ID} class="footerMenu__link">
+          {item.TITLE}
+        </a>
+      </li>
+    {/each}
   </ul>
   <p class="copy">© 2022 Wisteria Web</p>
 </section>
