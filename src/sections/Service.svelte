@@ -39,6 +39,7 @@
     min-height: calc(100vh - 80px);
     padding: 180px 10% 80px;
     text-align: center;
+    background-color: #e3e9fd;
   }
 
   .description {
