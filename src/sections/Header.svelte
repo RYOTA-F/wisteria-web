@@ -7,7 +7,7 @@
   <div class="headerContainer">
     <a href={PAGE.TOP.PATH}>
       <div class="logoWrapper">
-        <img src="./svelte.png" alt="logo" class="logo" />
+        <img src="icons/svelte.png" alt="logo" class="logo" />
       </div>
     </a>
     <ul class="menuList">
