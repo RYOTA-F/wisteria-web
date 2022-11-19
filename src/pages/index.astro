@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Maintenance from '../layouts/Maintenance.astro'
 /* sections */
 import Main from '../sections/Main.svelte'
 import About from '../sections/About.svelte'
@@ -8,7 +9,9 @@ import Blog from '../sections/Blog.svelte'
 import Contact from '../sections/Contact.svelte'
 ---
 
-<Layout title="Wisteria Web">
+<Maintenance title="Wisteria Web" />
+
+<!-- <Layout title="Wisteria Web">
   <main>
     <Main />
     <About client:load />
@@ -16,4 +19,4 @@ import Contact from '../sections/Contact.svelte'
     <Blog />
     <Contact client:load />
   </main>
-</Layout>
+</Layout> -->
