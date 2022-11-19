@@ -5,7 +5,7 @@
 </script>
 
 <div class="careerItem">
-  <Icon type="career" />
+  <Icon type="svelte" />
   {text}
 </div>
 
