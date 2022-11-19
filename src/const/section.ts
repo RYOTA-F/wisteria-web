@@ -7,10 +7,10 @@ const SECTION = {
     TITLE: 'Wisteria Webについて',
     ID: '#about',
   },
-  SERVICE: {
-    TITLE: 'サービス',
-    ID: '#service',
-  },
+  // SERVICE: {
+  //   TITLE: 'サービス',
+  //   ID: '#service',
+  // },
   CAREER: {
     TITLE: '経歴',
     ID: '#career',
