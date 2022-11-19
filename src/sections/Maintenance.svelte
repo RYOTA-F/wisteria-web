@@ -15,11 +15,22 @@
   }
 
   .container {
-    padding-top: 25%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 
-  .title {
-    font-size: 40px;
+
+  @media(min-width: 1024px) {
+    .title {
+      font-size: 52px;
+    }
+  }
+
+  @media(max-width: 480px) {
+    .title {
+      font-size: 24px;
+    }
   }
 </style>
