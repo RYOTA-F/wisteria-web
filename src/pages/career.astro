@@ -1,11 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro'
 /* sections */
-import Career from '../sections/Career.svelte'
+import CareerMain from '../sections/CareerMain.svelte'
+import CareerSummary from '../sections/CareerSummary.svelte'
 ---
 
 <Layout title="Wisteria Web">
   <main>
-    <Career client:load />
+    <CareerSummary />
+    <CareerMain client:load />
   </main>
 </Layout>
