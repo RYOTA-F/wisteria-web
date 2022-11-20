@@ -1,17 +1,17 @@
 <script lang="ts">
-  import { onMount } from "svelte"
+  // import { onMount } from "svelte"
 
   import H2 from "../components/H2.svelte";
   import H3 from "../components/H3.svelte";
   import CareerItem from "../components/CareerItem.svelte";
   import CAREER from '../const/career'
-  import {scrollIntoItem} from '../lib/gsap/scrollTorigger'
+  // import {scrollIntoItem} from '../lib/gsap/scrollTorigger'
 
-  onMount(() => {
-    CAREER.ITEMS.forEach((_, i) => {
-      scrollIntoItem(`${CAREER.SCROLL_IN_CLASS_NAME}${i}`)
-    })
-  })
+  // onMount(() => {
+  //   CAREER.ITEMS.forEach((_, i) => {
+  //     scrollIntoItem(`${CAREER.SCROLL_IN_CLASS_NAME}${i}`)
+  //   })
+  // })
 </script>
 
 <section id="career_main" class="careerMain">
