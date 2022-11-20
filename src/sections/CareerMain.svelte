@@ -5,23 +5,8 @@
   import H3 from "../components/H3.svelte";
   import CareerItem from "../components/CareerItem.svelte";
   import CAREER from '../const/career'
-  // import { scrollIntoItem } from '../lib/gsap/scrollTorigger'
+  import { scrollIntoItem } from '../lib/gsap/scrollTorigger'
 
-  import { gsap } from 'gsap'
-  import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
-  gsap.registerPlugin(ScrollTrigger)
-
-  const scrollIntoItem = (className: string) => {
-    gsap.to(`.${className}`, {
-      x: '0px',
-      duration: 1,
-
-      scrollTrigger: {
-        trigger: `.${className}`,
-        start: 'center bottom',
-      },
-    })
-  }
   onMount(() => {
     CAREER.ITEMS.forEach((_, i) => {
       scrollIntoItem(`${CAREER.SCROLL_IN_CLASS_NAME}${i}`)
