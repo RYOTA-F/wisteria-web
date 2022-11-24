@@ -30,6 +30,9 @@
   }
 
   .title {
+    display: flex;
+    align-items: center;
+    text-align: left;
     min-height: 90px;
     padding: 8px 16px;
     font-size: 16px;
@@ -37,6 +40,5 @@
     border-radius: 0 0 4px 4px;
     color: #fff;
     background-color: rgba(94, 108, 119, 0.6);
-    white-space: pre-wrap;
   }
 </style>
