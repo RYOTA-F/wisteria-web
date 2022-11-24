@@ -5,7 +5,7 @@
   import H3 from "../components/H3.svelte";
   import CareerItem from "../components/CareerItem.svelte";
   import CAREER from '../const/career'
-  import { scrollIntoItem } from '../lib/gsap/scrollTorigger'
+  // import { scrollIntoItem } from '../lib/gsap/scrollTorigger'
 
   // onMount(() => {
   //   CAREER.ITEMS.forEach((_, i) => {
