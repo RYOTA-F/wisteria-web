@@ -1,10 +1,14 @@
 const ITEMS = [
-  { name: 'test1' },
-  { name: 'test2' },
-  { name: 'test3' },
-  { name: 'test4' },
-  { name: 'test5' },
-  { name: 'test6' },
+  {
+    YEAR: 2010,
+    YEAR_ITEMS: [
+      {
+        MONTH: '3月',
+        TITLE: '神奈川県立横須賀工業高等学校 卒業',
+        DESCRIPTION: '',
+      },
+    ],
+  },
 ] as const
 
 const CAREER = {
