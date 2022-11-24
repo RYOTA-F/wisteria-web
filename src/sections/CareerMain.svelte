@@ -28,8 +28,10 @@
             <div class="careerItem">
               <p class="itemMonth">{item.MONTH}</p>
               <p class="itemTitle">{item.TITLE}</p>
-              {#if item.DESCRIPTION}
-                <p class="itemDescription">{item.DESCRIPTION}</p>
+              {#if item.DESCRIPTIONS.length}
+                {#each item.DESCRIPTIONS as description }
+                  <p class="itemDescription">{description}</p>
+                {/each}
               {/if}
             </div>
           </li>
@@ -54,7 +56,7 @@
     text-align: left;
     float: left;
     overflow: hidden;
-    padding: 40px 0.75rem;
+    padding: 20px 0.75rem 60px;
     margin-top: 40px;
   }
 
@@ -64,13 +66,13 @@
     background: #709dd8;
     top: 0px;
     left: 0.75rem;
-    margin-left: 25%;
+    margin-left: 30%;
     content: '';
     height: 100%;
   }
 
   .years {
-    margin-left: 15%;
+    margin-left: 20%;
     font-size: 28px;
     font-weight: bold;
   }
@@ -78,11 +80,11 @@
   .itemContainer {
     display: flex;
     align-items: center;
-    margin-left: calc(25% + 2px);
+    margin-left: calc(30% + 3.5px);
     position: relative;
   }
   .itemContainer:not(:first-child) {
-    margin-top: 16px;
+    margin-top: 24px;
   }
 
   .itemPoint {
@@ -95,7 +97,7 @@
   }
 
   .careerItem {
-    margin-left: 20px;
+    margin-left: 30px;
   }
 
   .itemMonth {
@@ -105,13 +107,13 @@
 
   .itemTitle {
     margin-top: 8px;
-    margin-left: 12px;
-    font-size: 18px;
+    margin-left: 22px;
+    font-size: 20px;
   }
 
   .itemDescription {
     margin-top: 8px;
-    margin-left: 32px;
+    margin-left: 56px;
     color: #7b7b7b;
   }
 </style>
