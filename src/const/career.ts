@@ -260,6 +260,14 @@ const ITEMS = [
         ],
         ICONS: ['typescript', 'react', 'electron'],
       },
+      {
+        MONTH: '12月',
+        TITLE: '「」(当サイト)開発',
+        DESCRIPTIONS: [
+          // TODO: Description追加
+        ],
+        ICONS: ['typescript', 'astro', 'svelte', 'cloudflare'],
+      },
     ],
   },
 ] as const

@@ -19,14 +19,13 @@
             <div class="careerItem">
               <p class="itemMonth">{item.MONTH}</p>
               <p class="itemTitle">{item.TITLE}</p>
-              <!-- 説明文 -->
+
               {#if item.DESCRIPTIONS.length}
                 {#each item.DESCRIPTIONS as description }
                   <p class="itemDescription">{description}</p>
                 {/each}
               {/if}
 
-              <!-- アイコン -->
               {#if item.ICONS.length}
                 <div class="iconsContainer">
                   {#each item.ICONS as icon}
