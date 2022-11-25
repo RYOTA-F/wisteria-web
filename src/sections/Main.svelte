@@ -1,22 +1,49 @@
-<script lang="ts">
+<script lang="ts" type="module">
   import MAIN from '../const/main'
+
+  import Particles from "svelte-particles";
+  import { loadFull } from "tsparticles";
+
+  let particlesConfig = {
+      particles: {
+          color: {
+              value: "#000",
+          },
+          links: {
+              enable: true,
+              color: "#000",
+          },
+          move: {
+              enable: true,
+          },
+      },
+  };
+
+  const onParticlesLoaded = (event: any) => {
+      // const particlesContainer = event.detail.particles;
+  };
+
+  const particlesInit = async (engine: any) => {
+      await loadFull(engine);
+  };
 </script>
 
 <section id="main" class="main">
-  <p class="typewriter__text typewriter__animation" >
-    {MAIN.WELCOME}
-    <span class="siteName">{MAIN.TITLE}</span>
-    {MAIN.EXCLAMATION}
-  </p>
+  <Particles
+    id="tsparticles"
+    options={particlesConfig}
+    on:particlesLoaded={onParticlesLoaded}
+    particlesInit={particlesInit}
+  />
 </section>
 
 <style>
   .main {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     width: 100%;
-    height: 100vh;
+    max-height: 100vh;
     padding-top: 80px;
     background-color: #709dd8;
     color: #fff;

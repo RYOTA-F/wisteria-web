@@ -15,7 +15,9 @@
     "@astrojs/svelte": "^1.0.2",
     "astro": "^1.6.0",
     "gsap": "^3.11.3",
-    "svelte": "^3.46.4"
+    "svelte": "^3.46.4",
+    "svelte-particles": "^2.5.3",
+    "tsparticles": "^2.5.3"
   },
   "devDependencies": {
     "@types/gsap": "^3.0.0",

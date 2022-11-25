@@ -17,7 +17,7 @@
 <style>
   .careerSummary {
     width: 100%;
-    padding: 60px 0;
+    padding: 40px 0;
     color: #fff;
     background-color: rgba(112,157,216,1);
     text-align: center;
