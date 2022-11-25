@@ -1,38 +1,37 @@
 <script lang="ts">
   import CAREER from '../const/career'
-  import H3 from '../components/H3.svelte';
 </script>
 
 <section id="career_summary" class="careerSummary">
-  <H3>{CAREER.NAME}</H3>
+  <h2 class="name">{CAREER.NAME}</h2>
 
-  <div class="descriptionContainer">
-    {#each CAREER.SUMMARY as items }
-      <ul class="listContainer">
-        {#each items as item }
-          <li class="description">{item}</li>
-        {/each}
-      </ul>
-    {/each}
-  </div>
+  {#each CAREER.SUMMARY as items }
+    <ul class="listContainer">
+      {#each items as item }
+        <li class="description">{item}</li>
+      {/each}
+    </ul>
+  {/each}
 </section>
 
 <style>
   .careerSummary {
     width: 100%;
-    padding: 60px 20%;
-    background-color: #f1f1f1;
+    padding: 60px 0;
+    color: #fff;
+    background-color: rgba(112,157,216,1);
+    text-align: center;
   }
 
-  .descriptionContainer {
-    padding: 30px;
+  .name {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
   }
 
   .listContainer:not(:first-child) {
     margin-top: 20px;
   }
-
-  :not(:first-child)
 
   .description {
     font-size: 16px;

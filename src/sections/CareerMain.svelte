@@ -1,17 +1,8 @@
 <script lang="ts">
-  import { onMount } from "svelte"
-
   import H2 from "../components/H2.svelte";
   import H3 from "../components/H3.svelte";
-  import CareerItem from "../components/CareerItem.svelte";
   import CAREER from '../const/career'
-  // import { scrollIntoItem } from '../lib/gsap/scrollTorigger'
-
-  // onMount(() => {
-  //   CAREER.ITEMS.forEach((_, i) => {
-  //     scrollIntoItem(`${CAREER.SCROLL_IN_CLASS_NAME}${i}`)
-  //   })
-  // })
+  import Icon from "../components/Icon.svelte";
 </script>
 
 <section id="career_main" class="careerMain">
@@ -28,10 +19,22 @@
             <div class="careerItem">
               <p class="itemMonth">{item.MONTH}</p>
               <p class="itemTitle">{item.TITLE}</p>
+              <!-- 説明文 -->
               {#if item.DESCRIPTIONS.length}
                 {#each item.DESCRIPTIONS as description }
                   <p class="itemDescription">{description}</p>
                 {/each}
+              {/if}
+
+              <!-- アイコン -->
+              {#if item.ICONS.length}
+                <div class="iconsContainer">
+                  {#each item.ICONS as icon}
+                    <div class="iconWrapper">
+                      <Icon type={icon}/>
+                    </div>
+                  {/each}
+                </div>
               {/if}
             </div>
           </li>
@@ -115,5 +118,17 @@
     margin-top: 8px;
     margin-left: 56px;
     color: #7b7b7b;
+  }
+
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 70px;
+  }
+
+  .iconWrapper {
+    width: 30px;
+    margin-left: 8px;
   }
 </style>
