@@ -6,6 +6,7 @@
 
   import ABOUT from '../const/about'
 
+  // TODO: 関数変更
   const onClick = () => console.log('移動')
 </script>
 
@@ -19,7 +20,7 @@
       <ContentItem href={content.BUTTON_LINK} buttonText={content.BUTTON_TEXT} onClick={onClick}>
         <H3>{content.TITLE}</H3>
         <div class="itemIcon">
-          <Icon type={content.ICON_TYPE} />
+          <img src={`icons/${content.ICON_TYPE}.svg`} alt={content.ICON_TYPE} />
         </div>
         <p class="itemDescription">{content.DESCRIPTION}</p>
       </ContentItem>
@@ -50,13 +51,12 @@
   }
 
   .itemIcon {
-    width: 100px;
-    height: 100px;
+    max-height:150px;
+    max-width: 150px;
     margin: 16px auto 0;
-    padding: 16px;
-    border-radius: 50%;
-    background-color: rgba(173, 205, 236, 0.2);
+    overflow: hidden;
   }
+
 
   .itemDescription {
     margin-top: 24px;

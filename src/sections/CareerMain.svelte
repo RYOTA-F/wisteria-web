@@ -46,9 +46,8 @@
 
 <style>
   .careerMain {
-    padding: 100px 10%;
+    padding: 60px 10% 100px;
     overflow: hidden;
-    padding-bottom: 200px;
     text-align: center;
   }
 

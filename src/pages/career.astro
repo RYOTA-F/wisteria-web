@@ -3,11 +3,13 @@ import Layout from '../layouts/Layout.astro'
 /* sections */
 import CareerMain from '../sections/CareerMain.svelte'
 import CareerSummary from '../sections/CareerSummary.svelte'
+import Contact from '../sections/Contact.svelte'
 ---
 
 <Layout title="Wisteria Web">
   <main>
     <CareerSummary />
-    <CareerMain client:load />
+    <CareerMain />
+    <Contact client:load />
   </main>
 </Layout>
