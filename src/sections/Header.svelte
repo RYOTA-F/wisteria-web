@@ -7,7 +7,7 @@
   <div class="headerContainer">
     <a href={PAGE.TOP.PATH}>
       <div class="logoWrapper">
-        <img src="icons/svelte.png" alt="logo" class="logo" />
+        <img src="icons/react.svg" alt="logo" class="logo" />
       </div>
     </a>
     <ul class="menuList">
@@ -47,11 +47,9 @@
   }
 
   .logo {
-    border-radius: 50%;
     height: 60px;
     width: 60px;
     padding: 5px;
-    background-color: #f1f1f1;
   }
 
   .menuList {

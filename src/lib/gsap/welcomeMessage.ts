@@ -2,7 +2,7 @@ import { gsap } from 'gsap'
 
 export const moveInWelcomeMessage = () => {
   gsap.to('.background-color', {
-    duration: 1, //アニメーションの時間の設定
+    duration: 2, //アニメーションの時間の設定
     opacity: 1, //表示状態の指定
   })
 
@@ -22,7 +22,7 @@ export const moveInWelcomeMessage = () => {
 
   //初期遅延3.5秒かけてから.titleを表示
   gsap.to('.title span', {
-    delay: 3.5, //アニメーションの初期遅延（アニメーションが開始されるまでの指定）
+    delay: 4.2, //アニメーションの初期遅延（アニメーションが開始されるまでの指定）
     duration: 1.5, //アニメーションの時間の設定
     opacity: 1, //表示状態の指定
     //同じclass名のバリデーションの設定

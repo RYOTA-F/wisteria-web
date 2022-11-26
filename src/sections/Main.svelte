@@ -9,28 +9,26 @@
 </script>
 
 <section id="main" class="main">
-  <div class="text-area">
+  <div  class="title">
     <h1 class="text">{MAIN.WELCOME}</h1>
     <p class="text">{MAIN.WELCOME_SUB}</p>
-    <h1 class="title">
-      {#each MAIN.TITLE  as item }
-        <span>{item}</span>
-      {/each}
-    </h1>
   </div>
+  <h1 class="title">
+    {#each MAIN.TITLE  as item }
+      <span>{item}</span>
+    {/each}
+  </h1>
 </section>
 
 <style>
-  .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    padding-top: 80px;
-    background-color: #709dd8;
-    color: #fff;
-  }
+.main {
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+  background-color: #709dd8;
+  color: #fff;
+  position: relative;
+}
 
 h1 {
   font-size: 70px;
