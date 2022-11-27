@@ -46,4 +46,29 @@
   .copy {
     padding: 24px 0;
   }
+
+  @media screen and (max-width: 600px) {
+    .footer {
+      padding: 20px 0 0;
+    }
+
+    .footerMenu__list {
+      flex-wrap: wrap;
+      padding: 0 10px;
+    }
+
+    .footerMenu__item {
+      padding: 0 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .footerMenu__item:nth-child(4) {
+      border-left: 1.5px solid #fff;
+    }
+
+    .copy {
+      padding: 10px 0;
+    }
+  }
 </style>
