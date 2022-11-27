@@ -24,17 +24,20 @@
   .main {
     width: 100%;
     height: 100vh;
+    padding-top: 80px;
     background-color: #709dd8;
     color: #fff;
     position: relative;
   }
 
   h1 {
-    text-align: center;
+    font-size: 70px;
     letter-spacing: 1px;
+    text-align: center;
   }
 
   p {
+    font-size: 24px;
     text-align: center;
   }
 
@@ -56,13 +59,9 @@
     color: #ffffff;
   }
 
-  @media screen and (min-width: 1020px) {
-    .main {
-      padding-top: 80px;
-    }
-
+  @media screen and (max-width: 600px) {
     h1 {
-      font-size: 70px;
+      font-size: 32px;
     }
 
     p {

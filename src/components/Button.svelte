@@ -44,4 +44,10 @@
     transition: border-color .3s,transform .3s;
     transition: border-color .3s;
   }
+
+  @media screen and (max-width: 600px) {
+    .button__inner {
+      margin: 0 10px;
+    }
+  }
 </style>

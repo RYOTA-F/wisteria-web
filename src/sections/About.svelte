@@ -17,13 +17,15 @@
 
   <div class="itemContainer">
     {#each ABOUT.CONTENTS as content}
-      <ContentItem href={content.BUTTON_LINK} buttonText={content.BUTTON_TEXT} onClick={onClick}>
-        <H3>{content.TITLE}</H3>
-        <div class="itemIcon">
-          <img src={`icons/${content.ICON_TYPE}.svg`} alt={content.ICON_TYPE} />
-        </div>
-        <p class="itemDescription">{content.DESCRIPTION}</p>
-      </ContentItem>
+      <div class="contentItemWrapper">
+        <ContentItem href={content.BUTTON_LINK} buttonText={content.BUTTON_TEXT} onClick={onClick}>
+          <H3>{content.TITLE}</H3>
+          <div class="itemIcon">
+            <img src={`icons/${content.ICON_TYPE}.svg`} alt={content.ICON_TYPE} />
+          </div>
+          <p class="itemDescription">{content.DESCRIPTION}</p>
+        </ContentItem>
+      </div>
     {/each}
   </div>
 </section>
@@ -57,8 +59,31 @@
     overflow: hidden;
   }
 
-
   .itemDescription {
     margin-top: 24px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .about {
+      padding: 40px 0;
+    }
+
+    .description {
+      margin-top: 24px;
+      padding: 0 20px;
+      white-space: pre-wrap;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .itemContainer {
+      display: block;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+
+    .contentItemWrapper:not(:first-child) {
+      margin-top: 20px;
+    }
   }
 </style>
