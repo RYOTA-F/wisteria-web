@@ -46,8 +46,17 @@
   }
 
   @media screen and (max-width: 600px) {
+    .button {
+      padding: 16px 30px;
+    }
     .button__inner {
       margin: 0;
+    }
+
+    .button__inner:after {
+      right: 16px;
+      border-bottom: 2px solid #fff;
+      border-left: 2px solid #fff;
     }
   }
 </style>
