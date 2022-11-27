@@ -25,9 +25,9 @@
 
 <style>
   .contact {
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 206px);
     width: 100%;
-    padding: 15% 0 120px;
+    padding: 10% 0 120px;
     text-align: center;
     background-color: rgba(241, 241, 241, 0.5);
     position: relative;
