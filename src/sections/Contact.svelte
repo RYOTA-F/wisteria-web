@@ -10,7 +10,6 @@
 </script>
 
 <section id="contact" class="contact">
-
   <div class="contact__titleMain">
     <H3>{CONTACT.TITLE_SUB}</H3>
     <H2>{CONTACT.TITLE_MAIN}</H2>
@@ -21,6 +20,8 @@
       <span class="contact__buttonText">{CONTACT.BUTTON_TEXT}</span>
     </Button>
   </div>
+  <img src="icons/presentation.svg" alt="presentation" class="iconPresentation" />
+  <img src="icons/contact.svg" alt="contact" class="iconContact" />
 </section>
 
 <style>
@@ -28,7 +29,8 @@
     width: 100%;
     padding: 100px 0 120px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: rgba(241, 241, 241, 0.3);
+    position: relative;
   }
 
   .contact__titleMain {
@@ -48,5 +50,21 @@
 
   .contact__buttonText{
     font-size: 20px;
+  }
+
+  .iconPresentation {
+    position: absolute;
+    height: 160px;
+    top: 80px;
+    left: 120px;
+    z-index: -1;
+  }
+
+  .iconContact {
+    position: absolute;
+    width: 160px;
+    bottom: 80px;
+    right: 120px;
+    z-index: -1;
   }
 </style>
