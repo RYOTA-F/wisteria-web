@@ -5,7 +5,7 @@
 	import { CONTACT } from '../const/contact';
 
   // TODO: :GA
-  const onClick = () =>console.log('onClick')
+  const onClick = () => {}
 
 </script>
 
@@ -26,7 +26,7 @@
 <style>
   .contact {
     width: 100%;
-    padding: 100px 0 160px;
+    padding: 100px 0 120px;
     text-align: center;
     background-color: #f1f1f1;
   }
@@ -47,6 +47,6 @@
   }
 
   .contact__buttonText{
-    font-size: 24px;
+    font-size: 20px;
   }
 </style>

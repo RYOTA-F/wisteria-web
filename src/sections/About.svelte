@@ -6,8 +6,8 @@
 
   import ABOUT from '../const/about'
 
-  // TODO: 関数変更
-  const onClick = () => console.log('移動')
+  // TODO: :GA
+  const onClick = () => {}
 </script>
 
 <section id="about" class="about">

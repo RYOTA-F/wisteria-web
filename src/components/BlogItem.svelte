@@ -33,9 +33,8 @@
     display: flex;
     align-items: center;
     text-align: left;
-    min-height: 90px;
     padding: 8px 16px;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
     border-radius: 0 0 4px 4px;
     color: #fff;
