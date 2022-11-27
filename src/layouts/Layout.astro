@@ -27,19 +27,14 @@ const { title } = Astro.props
       <Maintenance title="Wisteria Web" />
     :
       <Header />
-      <div class="headerBackground"></div>
+      <main>
       <slot />
+      </main>
       <Footer />
       <ScrollButton client:load />
     }
 
     <style>
-      .headerBackground {
-        height: 80px;
-        width: 80px;
-        content: ' ';
-        background-color: #fff;
-      }
     </style>
 
     <style is:global>

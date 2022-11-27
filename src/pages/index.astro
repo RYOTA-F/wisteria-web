@@ -3,17 +3,14 @@ import Layout from '../layouts/Layout.astro'
 /* sections */
 import Main from '../sections/Main.svelte'
 import About from '../sections/About.svelte'
-import Servise from '../sections/Service.svelte'
 import Blog from '../sections/Blog.svelte'
 import Contact from '../sections/Contact.svelte'
 ---
 
 <Layout title="Wisteria Web">
-  <main>
-    <Main client:load />
-    <About client:load />
-    <!-- <Servise /> -->
-    <Blog />
-    <Contact client:load />
-  </main>
+  <Main client:load />
+  <About client:load />
+  <!-- <Servise /> -->
+  <Blog />
+  <Contact client:load />
 </Layout>

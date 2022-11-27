@@ -21,43 +21,52 @@
 </section>
 
 <style>
-.main {
-  width: 100%;
-  height: 100vh;
-  padding-top: 80px;
-  background-color: #709dd8;
-  color: #fff;
-  position: relative;
-}
+  .main {
+    width: 100%;
+    height: 100vh;
+    background-color: #709dd8;
+    color: #fff;
+    position: relative;
+  }
 
-h1 {
-  font-size: 70px;
-  margin: 0;
-  text-align: center;
-  letter-spacing: 1px;
-}
+  h1 {
+    text-align: center;
+    letter-spacing: 1px;
+  }
 
-p {
-  font-size: 24px;
-  margin: 0;
-  text-align: center;
-}
+  p {
+    text-align: center;
+  }
 
-.text {
-  opacity: 0;
-  transform: translateY(20px);
-  color: #ffffff;
-}
+  .text {
+    opacity: 0;
+    transform: translateY(20px);
+    color: #ffffff;
+  }
 
-.title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
-.title span {
-  opacity: 0;
-  color: #ffffff;
-}
+  .title span {
+    opacity: 0;
+    color: #ffffff;
+  }
+
+  @media screen and (min-width: 1020px) {
+    .main {
+      padding-top: 80px;
+    }
+
+    h1 {
+      font-size: 70px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
 </style>

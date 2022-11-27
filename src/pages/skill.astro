@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro'
 /* sections */
+import DummyHeader from '../sections/DummyHeader.svelte'
 import SkillSummary from '../sections/SkillSummary.svelte'
 import SkillMain from '../sections/SkillMain.svelte'
 import Contact from '../sections/Contact.svelte'
 ---
 
 <Layout title="スキル:Wisteria Web">
-  <main>
-    <SkillSummary />
-    <SkillMain client:load />
-    <Contact client:load />
-  </main>
+  <DummyHeader />
+  <SkillSummary />
+  <SkillMain client:load />
+  <Contact client:load />
 </Layout>

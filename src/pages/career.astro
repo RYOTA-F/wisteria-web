@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro'
 /* sections */
+import DummyHeader from '../sections/DummyHeader.svelte'
 import CareerMain from '../sections/CareerMain.svelte'
 import CareerSummary from '../sections/CareerSummary.svelte'
 import Contact from '../sections/Contact.svelte'
 ---
 
 <Layout title="経歴:Wisteria Web">
-  <main>
-    <CareerSummary />
-    <CareerMain />
-    <Contact client:load />
-  </main>
+  <DummyHeader />
+  <CareerSummary />
+  <CareerMain />
+  <Contact client:load />
 </Layout>
