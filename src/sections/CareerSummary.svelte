@@ -49,7 +49,7 @@
   @media screen and (max-width: 600px) {
     .careerSummary {
       padding: 20px;
-      text-align: left;
+      text-align: center;
     }
 
     .container {
@@ -59,6 +59,7 @@
 
     .description {
       font-size: 14px;
+      text-align: left;
     }
   }
 </style>

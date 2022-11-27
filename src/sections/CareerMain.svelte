@@ -172,6 +172,8 @@
 
     .itemDescription {
       margin-left: 24px;
+      font-size: 12px;
+      line-height: 1.3;
     }
 
     .iconsContainer {
