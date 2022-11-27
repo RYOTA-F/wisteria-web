@@ -34,7 +34,7 @@
     min-height: calc(100vh - 80px);
     padding: 120px 10% 80px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: rgba(241, 241, 241, 0.5);
   }
 
   .description {

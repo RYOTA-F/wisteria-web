@@ -1,11 +1,11 @@
 <script lang="ts">
-  import CAREER from '../const/career'
+  import { SKILL } from '../const/skill'
 </script>
 
-<section id="career_summary" class="careerSummary">
+<section id="skill_summary" class="skillSummary">
   <div class="container">
-    <h2 class="name">{CAREER.NAME}</h2>
-    {#each CAREER.SUMMARY as items }
+    <h2 class="title">{SKILL.TITLE}</h2>
+    {#each SKILL.DESCRIPTION as items }
       <ul class="listContainer">
         {#each items as item }
           <li class="description">{item}</li>
@@ -16,7 +16,7 @@
 </section>
 
 <style>
-  .careerSummary {
+  .skillSummary {
     width: 100%;
     padding: 40px 0;
     color: #fff;
@@ -24,15 +24,15 @@
     text-align: left;
   }
 
-  .name {
-    color: #fff;
-    font-size: 22px;
-    font-weight: 700;
-  }
-
   .container {
     margin-top: 20px;
     margin-left: 25%;
+  }
+
+  .title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
   }
 
   .listContainer:not(:first-child) {

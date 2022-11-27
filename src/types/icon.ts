@@ -1,6 +1,9 @@
 export type IconPettern =
   | 'career'
   | 'skill'
+  | 'presentation'
+  | 'contact'
+  | 'percentage'
   | 'html'
   | 'css'
   | 'javascript'

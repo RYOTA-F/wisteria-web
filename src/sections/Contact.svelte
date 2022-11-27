@@ -29,7 +29,7 @@
     width: 100%;
     padding: 100px 0 120px;
     text-align: center;
-    background-color: rgba(241, 241, 241, 0.3);
+    background-color: rgba(241, 241, 241, 0.5);
     position: relative;
   }
 
