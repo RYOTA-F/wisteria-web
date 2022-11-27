@@ -56,7 +56,6 @@
     position: relative;
     text-align: left;
     float: left;
-    overflow: hidden;
     padding: 20px 0.75rem 60px;
     margin-top: 40px;
   }
@@ -128,5 +127,56 @@
   .iconWrapper {
     width: 30px;
     margin-left: 8px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .careerMain {
+      padding: 40px 10px;
+      text-align: center;
+    }
+
+    .treeContainer {
+      padding: 20px 0 60px;
+    }
+
+    .treeContainer:before {
+      margin-left: 15%;
+    }
+
+    .years {
+      margin-left: 4px;
+      font-size: 18px;
+    }
+
+    .itemContainer {
+      margin-left: calc(15% + 8px);
+    }
+
+    .itemPoint {
+      top: 6px;
+    }
+
+    .careerItem {
+      margin-left: 15px;
+    }
+
+    .itemMonth {
+      font-size: 16px;
+    }
+
+    .itemTitle {
+      margin-top: 4px;
+      margin-left: 10px;
+      font-size: 16px;
+    }
+
+    .itemDescription {
+      margin-left: 24px;
+    }
+
+    .iconsContainer {
+      flex-wrap: wrap;
+      margin-left: 32px;
+    }
   }
 </style>
