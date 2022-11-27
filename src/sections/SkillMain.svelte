@@ -64,4 +64,24 @@
     font-size: 14px;
     font-weight: 700;
   }
+
+  @media screen and (max-width: 600px) {
+    .skillMain {
+      padding: 40px 10px;
+    }
+
+    .itemContainer {
+      margin-top: 0;
+    }
+
+    .listItem {
+      display: block;
+      margin: 20px auto 0;
+      width: 80%;
+    }
+
+    .textContainer {
+      margin-top: 20px;
+    }
+  }
 </style>
