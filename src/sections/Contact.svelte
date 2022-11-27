@@ -67,4 +67,31 @@
     right: 120px;
     z-index: -1;
   }
+
+  @media screen and (max-width: 600px) {
+    .contact {
+      padding: 40px 20px;
+    }
+
+    .contact__description {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .iconPresentation {
+      height: 80px;
+      top: 20px;
+      left: 0;
+    }
+
+    .iconContact {
+      height: 80px;
+      top: 20px;
+      right: 0;
+    }
+
+    .contact__buttonText{
+      font-size: 16px;
+    }
+  }
 </style>
