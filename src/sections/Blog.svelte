@@ -45,4 +45,20 @@
   .buttonContainer {
     margin-top: 40px;
   }
+
+  @media screen and (max-width: 600px) {
+    .blog {
+      padding: 40px 20px;
+    }
+
+    .blogContainer {
+      display: block;
+      padding: 0 10px;
+    }
+
+    .blogItem {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
 </style>

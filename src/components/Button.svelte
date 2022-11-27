@@ -47,7 +47,7 @@
 
   @media screen and (max-width: 600px) {
     .button__inner {
-      margin: 0 10px;
+      margin: 0;
     }
   }
 </style>
