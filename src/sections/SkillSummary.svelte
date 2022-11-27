@@ -45,4 +45,21 @@
   .description:not(:first-child) {
     margin-top: 8px;
   }
+
+  @media screen and (max-width: 600px) {
+    .skillSummary {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    .description {
+      font-size: 14px;
+      text-align: left;
+    }
+  }
 </style>
