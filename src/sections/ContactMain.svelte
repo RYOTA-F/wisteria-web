@@ -81,7 +81,7 @@
 
     .iconPresentation {
       height: 80px;
-      top: 20px;
+      top: 40px;
       left: 0;
     }
 
