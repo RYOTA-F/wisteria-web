@@ -41,4 +41,13 @@
     border-left: 4px solid #fff;
     transform: rotate(135deg);
   }
+
+  @media screen and (max-width: 600px) {
+    .scrollButton {
+      bottom: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+    }
+  }
 </style>

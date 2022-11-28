@@ -10,14 +10,15 @@
 </script>
 
 <section id="contact" class="contact">
-  <div class="contact__titleMain">
+  <div class="contactTitleMain">
     <H3>{CONTACT.TITLE_SUB}</H3>
     <H2>{CONTACT.TITLE_MAIN}</H2>
   </div>
-  <p class="contact__description">{CONTACT.DESCRIPTION}</p>
-  <div class="contact__button">
+  <p class="contactDescription">{CONTACT.DESCRIPTION}</p>
+  <p class="buttonLabel">{CONTACT.BUTTON_LABEL}</p>
+  <div class="contactButton">
     <Button onClick={onClick} href={CONTACT.FORM_URL} >
-      <span class="contact__buttonText">{CONTACT.BUTTON_TEXT}</span>
+      <span class="contactButtonText">{CONTACT.BUTTON_TEXT}</span>
     </Button>
   </div>
   <img src="icons/presentation.svg" alt="presentation" class="iconPresentation" />
@@ -33,22 +34,27 @@
     position: relative;
   }
 
-  .contact__titleMain {
+  .contactTitleMain {
     line-height: 1.5;
   }
 
-  .contact__description {
+  .contactDescription {
     margin-top: 32px;
     font-size: 20px;
     line-height: 1.5;
     white-space: pre-wrap;
   }
 
-  .contact__button {
+  .contactButton {
     margin-top: 10px;
   }
 
-  .contact__buttonText{
+  .contactButtonText{
+    font-size: 20px;
+  }
+
+  .buttonLabel {
+    margin-top: 44px;
     font-size: 20px;
   }
 
@@ -73,9 +79,11 @@
       padding: 40px 20px;
     }
 
-    .contact__description {
-      margin-top: 20px;
-      font-size: 16px;
+    .contactDescription {
+      margin-top: 24px;
+      font-size: 14px;
+      text-align: left;
+      white-space: normal;
     }
 
     .iconPresentation {
@@ -90,8 +98,13 @@
       right: 0;
     }
 
-    .contact__buttonText{
+    .contactButtonText{
       font-size: 16px;
+    }
+
+    .buttonLabel {
+      margin-top: 36px;
+      font-size: 14px;
     }
   }
 </style>

@@ -12,7 +12,7 @@
   <ul class="itemContainer">
     {#each SKILL_MAIN.SKILL_ITEMS as item }
       <li class="listItem">
-        <a href={item.URL} target="__brank">
+        <a href={item.URL} class="listLink" target="__brank">
           <ContentItem>
             <div class="iconContainer">
               <Icon type={item.ICON} />
@@ -67,17 +67,24 @@
 
   @media screen and (max-width: 600px) {
     .skillMain {
-      padding: 40px 10px;
+      padding: 40px 0;
     }
 
     .itemContainer {
-      margin-top: 0;
+      margin-top: 20px;
     }
 
     .listItem {
-      display: block;
-      margin: 20px auto 0;
-      width: 80%;
+      margin-left: 0;
+      margin-top: 0;
+      margin-bottom: 20px;
+      width: 50%;
+      text-align: center;
+    }
+
+    .listLink {
+      width: 100%;
+      padding: 0 10px;
     }
 
     .textContainer {

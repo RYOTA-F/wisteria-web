@@ -1,7 +1,6 @@
 <script lang="ts">
   import H2 from "../components/H2.svelte";
   import H3 from "../components/H3.svelte";
-  import Icon from '../components/Icon.svelte'
   import ContentItem from "../components/ContentItem.svelte";
 
   import ABOUT from '../const/about'
@@ -72,6 +71,7 @@
       margin-top: 24px;
       padding: 0 20px;
       white-space: pre-wrap;
+      font-size: 14px;
       line-height: 1.8;
       text-align: left;
     }
@@ -84,6 +84,10 @@
 
     .contentItemWrapper:not(:first-child) {
       margin-top: 20px;
+    }
+
+    .itemDescription {
+      margin-top: 12px;
     }
   }
 </style>
