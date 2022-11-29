@@ -60,7 +60,7 @@
 
   .hamburgerMenu.active span:nth-of-type(1) {
     top: 14px;
-    left: 22px;
+    left: 18px;
     transform: translateY(6px) rotate(-45deg);
     width: 30%;
   }
@@ -71,7 +71,7 @@
 
   .hamburgerMenu.active span:nth-of-type(3){
       top: 26px;
-      left: 22px;
+      left: 18px;
       transform: translateY(-6px) rotate(45deg);
       width: 30%;
   }
@@ -80,6 +80,6 @@
     content: "Close";
     transform: translateY(0) rotate(-45deg);
     top: 5px;
-    left: 4px;
+    left: 0px;
   }
 </style>
