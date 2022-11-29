@@ -20,7 +20,7 @@
     top:0;
     right: -120%;
     width:100%;
-    height: 100vh;
+    height: 100%;
     background:#709dd8;
     transition: all 0.6s;
   }
