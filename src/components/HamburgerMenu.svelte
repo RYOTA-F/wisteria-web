@@ -80,6 +80,6 @@
     content: "Close";
     transform: translateY(0) rotate(-45deg);
     top: 5px;
-    left: 0px;
+    left: 2px;
   }
 </style>
