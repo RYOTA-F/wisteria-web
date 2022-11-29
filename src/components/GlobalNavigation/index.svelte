@@ -19,7 +19,7 @@
   <div class="hamburgerMenuWrapper">
     <HamburgerMenu onClickTogggle={onClickTogggle} />
   </div>
-  <SlideInNavigation  />
+  <SlideInNavigation onClickTogggle={onClickTogggle}  />
 </div>
 
 <style>

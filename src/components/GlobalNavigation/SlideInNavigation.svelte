@@ -1,14 +1,16 @@
 <script lang="ts">
+	import { MENU } from './../../const/menu';
   import { SLIDE_IN_NAVIGATION } from '../../const/slideInNavigation'
+
+  export let onClickTogggle: () => void
 </script>
 
 <nav id={SLIDE_IN_NAVIGATION.ID} class={SLIDE_IN_NAVIGATION.ID}>
   <div id="g-nav-list">
     <ul>
-      <li><a href="/skill">Top</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Service</a></li>
-      <li><a href="#">Contact</a></li>
+      {#each MENU as item }
+        <li><a href={item.ID} on:click={onClickTogggle}>{item.TITLE}</a></li>
+      {/each}
     </ul>
   </div>
 </nav>
