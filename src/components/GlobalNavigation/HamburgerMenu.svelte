@@ -30,7 +30,6 @@
     width: 45%;
   }
 
-
   .hamburgerMenu span:nth-of-type(1) {
     top:13px;
   }
