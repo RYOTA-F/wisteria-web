@@ -23,10 +23,8 @@
     </ul>
   </div>
 
-  <div class="hamburgerMenu">
-    <div class="hamburgerMenuWrapper">
-      <GlobalNavigation />
-    </div>
+  <div class="globalNavigationWrapper">
+    <GlobalNavigation />
   </div>
 </section>
 
@@ -95,7 +93,7 @@
   }
 
   @media screen and (min-width: 600px) {
-    .hamburgerMenu {
+    .globalNavigationWrapper {
       display: none;
     }
   }
@@ -106,16 +104,6 @@
     }
     .headerContainer {
       display: none;
-    }
-
-    .hamburgerMenu {
-      position: relative;
-    }
-
-    .hamburgerMenuWrapper {
-      position: absolute;
-      top: 10px;
-      right: 10px;
     }
   }
 </style>

@@ -1,12 +1,15 @@
 <script lang="ts">
   import { CLASS_NAME } from '../const/hamburgerMenu'
   import { changeActiveClass } from '../lib/vanilaJS/hamburgerMenu'
+  import { changeActiveClass as hoge } from '../lib/vanilaJS/slideInNavigation'
 
   export let isOpen: boolean
+  export let changeIsOpen: () => void
 
   const onClickTogggle = () => {
     changeActiveClass(isOpen)
-    isOpen = !isOpen
+    hoge(isOpen)
+    changeIsOpen()
   }
 </script>
 
