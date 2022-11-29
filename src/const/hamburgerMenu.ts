@@ -1,4 +1,4 @@
-export const CLASS_NAME = {
-  TARGET: 'hamburgerMenu',
-  ACTIVE: 'active',
-}
+export const HANBURGER_MENU = {
+  ID: 'hamburgerMenu',
+  CLASS: 'active',
+} as const

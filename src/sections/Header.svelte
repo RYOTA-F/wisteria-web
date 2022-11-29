@@ -1,5 +1,5 @@
 <script lang="ts">
-  import GlobalNavigation from '../components/GlobalNavigation.svelte';
+  import GlobalNavigation from '../components/GlobalNavigation/index.svelte';
 
   import { MENU } from '../const/menu'
   import PAGE from '../const/page';

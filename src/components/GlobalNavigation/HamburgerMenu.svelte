@@ -1,20 +1,11 @@
 <script lang="ts">
-  import { CLASS_NAME } from '../const/hamburgerMenu'
-  import { changeActiveClass } from '../lib/vanilaJS/hamburgerMenu'
-  import { changeActiveClass as hoge } from '../lib/vanilaJS/slideInNavigation'
+  import { HANBURGER_MENU } from '../../const/hamburgerMenu'
 
-  export let isOpen: boolean
-  export let changeIsOpen: () => void
-
-  const onClickTogggle = () => {
-    changeActiveClass(isOpen)
-    hoge(isOpen)
-    changeIsOpen()
-  }
+  export let onClickTogggle: () => void
 </script>
 
 <button on:click={onClickTogggle}>
-  <div id={CLASS_NAME.TARGET} class={CLASS_NAME.TARGET}><span /><span /><span /></div>
+  <div id={HANBURGER_MENU.ID} class={HANBURGER_MENU.ID}><span /><span /><span /></div>
 </button>
 
 <style>
@@ -25,6 +16,7 @@
     width: 50px;
     height: 50px;
     border-radius: 5px;
+    z-index: 10;
   }
 
   .hamburgerMenu span{
