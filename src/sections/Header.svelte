@@ -1,4 +1,6 @@
 <script lang="ts">
+  import HamburgerMenu from '../components/HamburgerMenu.svelte';
+
   import { MENU } from '../const/menu'
   import PAGE from '../const/page';
 </script>
@@ -19,6 +21,12 @@
         </li>
       {/each}
     </ul>
+  </div>
+
+  <div class="hamburgerMenu">
+    <div class="hamburgerMenuWrapper">
+      <HamburgerMenu />
+    </div>
   </div>
 </section>
 
@@ -86,9 +94,28 @@
     padding: 0 15px;
   }
 
+  @media screen and (min-width: 600px) {
+    .hamburgerMenu {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 600px) {
     .header {
-      display: none
+      background-color: transparent;
+    }
+    .headerContainer {
+      display: none;
+    }
+
+    .hamburgerMenu {
+      position: relative;
+    }
+
+    .hamburgerMenuWrapper {
+      position: absolute;
+      top: 10px;
+      right: 10px;
     }
   }
 </style>
