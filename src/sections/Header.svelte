@@ -1,5 +1,5 @@
 <script lang="ts">
-  import HamburgerMenu from '../components/HamburgerMenu.svelte';
+  import GlobalNavigation from '../components/GlobalNavigation.svelte';
 
   import { MENU } from '../const/menu'
   import PAGE from '../const/page';
@@ -25,7 +25,7 @@
 
   <div class="hamburgerMenu">
     <div class="hamburgerMenuWrapper">
-      <HamburgerMenu />
+      <GlobalNavigation />
     </div>
   </div>
 </section>

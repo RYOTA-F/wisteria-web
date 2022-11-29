@@ -2,7 +2,7 @@
   import { CLASS_NAME } from '../const/hamburgerMenu'
   import { changeActiveClass } from '../lib/vanilaJS/hamburgerMenu'
 
-  let isOpen = false
+  export let isOpen: boolean
 
   const onClickTogggle = () => {
     changeActiveClass(isOpen)
