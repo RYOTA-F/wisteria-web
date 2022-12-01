@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { string } from './../../node_modules/micromark/dev/lib/initialize/text.js';
   import Button from '../components/Button.svelte'
 
   export let href: string = ''
