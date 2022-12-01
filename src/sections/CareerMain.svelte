@@ -65,7 +65,7 @@
   .treeContainer:before {
     position: absolute;
     width: 3px;
-    background: #709dd8;
+    background: #427bbf;
     top: 0px;
     left: 0.75rem;
     margin-left: 30%;
@@ -95,7 +95,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #709dd8;
+    background: #427bbf;
   }
 
   .careerItem {

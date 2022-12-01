@@ -1,4 +1,6 @@
 <script lang="ts">
+  /* Const */
+  import COLOR from '@src/const/color';
   /* Props */
   export let onClick: () => void
   export let href: string | undefined = undefined
@@ -16,13 +18,13 @@
   .button {
     padding: 16px 40px;
     color: #fff;
-    background-color: #709dd8;
+    background-color: #427bbf;
     border-radius: 9999px;
     position: relative;
   }
   .button:hover {
     cursor: pointer;
-    color: #709dd8;
+    color: #427bbf;
     background-color: #fff;
     transition: 0.5s;
   }

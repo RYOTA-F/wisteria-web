@@ -25,7 +25,7 @@
     right: -120%;
     width:100%;
     height: 100%;
-    background:#709dd8;
+    background:#427bbf;
     transition: all 0.6s;
   }
 

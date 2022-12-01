@@ -13,7 +13,7 @@
 <style>
   .hamburgerMenu{
     position: relative;
-    background: #709dd8;
+    background: #427bbf;
     cursor: pointer;
     width: 50px;
     height: 50px;

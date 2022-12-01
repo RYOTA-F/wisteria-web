@@ -2,6 +2,7 @@
 	import { onMount } from 'svelte';
   /* Const */
   import MAIN from '@src/const/sections/main'
+  import COLOR from '@src/const/color';
   /* Libs */
   import { moveInWelcomeMessage } from '@/lib/gsap/welcomeMessage'
 
@@ -10,14 +11,18 @@
   })
 </script>
 
-<section id="main" class="main">
+<section
+  id="main"
+  class="main"
+  style:background={`linear-gradient(${COLOR.THEME.BLUE_GROUP.TYPE1}, ${COLOR.THEME.BLUE_GROUP.TYPE2}, ${COLOR.THEME.BLUE_GROUP.TYPE4}, ${COLOR.THEME.BLUE_GROUP.TYPE2}, ${COLOR.THEME.BLUE_GROUP.TYPE1})`}
+>
   <div  class="title">
-    <h1 class="text">{MAIN.WELCOME}</h1>
-    <p class="text">{MAIN.WELCOME_SUB}</p>
+    <h1 class="text" style:color={COLOR.THEME.WHITE_GROUP.WHITE}>{MAIN.WELCOME}</h1>
+    <p class="text" style:color={COLOR.THEME.WHITE_GROUP.WHITE}>{MAIN.WELCOME_SUB}</p>
   </div>
   <h1 class="title">
     {#each MAIN.TITLE  as item }
-      <span>{item}</span>
+      <span style:color={COLOR.THEME.WHITE_GROUP.WHITE}>{item}</span>
     {/each}
   </h1>
 </section>
@@ -27,8 +32,6 @@
     width: 100%;
     height: 100vh;
     padding-top: 80px;
-    background-color: #709dd8;
-    color: #fff;
     position: relative;
   }
 
@@ -46,7 +49,6 @@
   .text {
     opacity: 0;
     transform: translateY(20px);
-    color: #ffffff;
   }
 
   .title {
@@ -58,7 +60,6 @@
 
   .title span {
     opacity: 0;
-    color: #ffffff;
   }
 
   @media screen and (max-width: 600px) {

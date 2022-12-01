@@ -21,7 +21,7 @@
     width: 100%;
     padding: 40px 0;
     color: #fff;
-    background-color: #709dd8;
+    background-color: #427bbf;
     text-align: left;
   }
 

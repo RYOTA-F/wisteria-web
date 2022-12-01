@@ -17,7 +17,7 @@
     border: none;
     border-radius: 50%;
     color: #fff;
-    background-color: #709dd8;
+    background-color: #427bbf;
     cursor: pointer;
   }
   .scrollButton:hover {
@@ -25,7 +25,7 @@
     transition: 0.2s;
   }
   .scrollButton:hover > div {
-    border-color: #709dd8;
+    border-color: #427bbf;
   }
 
   .scrollButton__innnerArrow {

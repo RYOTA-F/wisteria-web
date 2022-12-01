@@ -81,7 +81,7 @@
   .menuItem:hover {
     cursor: pointer;
     color: #fff;
-    background-color: #709dd8;
+    background-color: #427bbf;
   }
 
   .menuLink {
