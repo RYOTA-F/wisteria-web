@@ -5,7 +5,7 @@
   import Icon from '@/components/Icon.svelte'
   import ContentItem from "@/components/ContentItem.svelte";
   /* Const */
-  import SERVICE from "@/const/service";
+  import SERVICE from "@src/const/sections/service";
 </script>
 
 <section id="service" class="service">

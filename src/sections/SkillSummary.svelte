@@ -1,6 +1,6 @@
 <script lang="ts">
   /* Const */
-  import { SKILL } from '@/const/skill'
+  import { SKILL } from '@src/const/sections/skill'
 </script>
 
 <section id="skill_summary" class="skillSummary">

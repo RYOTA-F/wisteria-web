@@ -1,7 +1,7 @@
 <script lang="ts" type="module">
 	import { onMount } from 'svelte';
   /* Const */
-  import MAIN from '@/const/main'
+  import MAIN from '@src/const/sections/main'
   /* Libs */
   import { moveInWelcomeMessage } from '@/lib/gsap/welcomeMessage'
 

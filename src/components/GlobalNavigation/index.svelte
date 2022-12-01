@@ -3,8 +3,8 @@
 	import SlideInNavigation from '@/components/GlobalNavigation/SlideInNavigation.svelte'
   import HamburgerMenu from "@/components/GlobalNavigation/HamburgerMenu.svelte";
   /* Const */
-  import { HANBURGER_MENU } from '@/const/hamburgerMenu'
-  import { SLIDE_IN_NAVIGATION } from '@/const/slideInNavigation'
+  import { HANBURGER_MENU } from '@src/const/globalNavigation/hamburgerMenu'
+  import { SLIDE_IN_NAVIGATION } from '@/const/globalNavigation/slideInNavigation'
   /* Libs */
   import { changeActiveClass } from '@/lib/vanilaJS/navigationClass'
 

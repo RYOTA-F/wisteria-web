@@ -5,7 +5,7 @@
   import BlogItem from "@/components/BlogItem.svelte";
   import Button from "@/components/Button.svelte";
   /* Const */
-  import BLOG, { BUTTON } from "@/const/blog";
+  import BLOG, { BUTTON } from "@/const/sections/blog";
 </script>
 
 <section id="blog" class="blog">

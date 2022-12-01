@@ -4,7 +4,7 @@
   import H3 from "@/components/H3.svelte";
   import Button from "@/components/Button.svelte";
   /* Const */
-	import { CONTACT } from '@/const/contact';
+	import { CONTACT } from '@/const/sections/contact';
 
   /* Methods */
   // TODO: :GA

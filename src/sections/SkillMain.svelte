@@ -5,7 +5,7 @@
   import Icon from "@/components/Icon.svelte";
   import ContentItem from "@/components/ContentItem.svelte";
   /* Const */
-  import { SKILL_MAIN } from '@/const/skill'
+  import { SKILL_MAIN } from '@src/const/sections/skill'
 </script>
 
 <section id="skill_main" class="skillMain">

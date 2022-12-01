@@ -1,5 +1,5 @@
-import type { HANBURGER_MENU } from '../../const/hamburgerMenu'
-import type { SLIDE_IN_NAVIGATION } from '../../const/slideInNavigation'
+import type { HANBURGER_MENU } from '@const/globalNavigation/hamburgerMenu'
+import type { SLIDE_IN_NAVIGATION } from '@const/globalNavigation/slideInNavigation'
 
 type IChangeActiveClassTarget =
   | typeof HANBURGER_MENU

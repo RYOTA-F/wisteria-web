@@ -4,7 +4,7 @@
   import H3 from "@/components/H3.svelte";
   import Icon from "@/components/Icon.svelte";
   /* Const */
-  import CAREER from '@/const/career'
+  import CAREER from '@/const/sections/career'
 </script>
 
 <section id="career_main" class="careerMain">

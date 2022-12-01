@@ -1,6 +1,6 @@
 <script lang="ts">
   /* Const */
-  import CAREER from '@/const/career'
+  import CAREER from '@/const/sections/career'
 </script>
 
 <section id="career_summary" class="careerSummary">
