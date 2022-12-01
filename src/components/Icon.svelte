@@ -1,7 +1,10 @@
 <script lang="ts">
-  import type {IconPettern} from '../types/icon'
+  /* Types */
+  import type { IconPettern } from '@/types/icon'
 
+  /* Props */
   export let type: IconPettern
+
   const src = `icons/${type}.svg`
 </script>
 

@@ -1,6 +1,8 @@
 <script lang="ts">
-  import { HANBURGER_MENU } from '../../const/hamburgerMenu'
+  /* Const */
+  import { HANBURGER_MENU } from '@/const/hamburgerMenu'
 
+  /* Props */
   export let onClickTogggle: () => void
 </script>
 

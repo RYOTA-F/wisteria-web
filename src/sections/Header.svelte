@@ -1,8 +1,9 @@
 <script lang="ts">
-  import GlobalNavigation from '../components/GlobalNavigation/index.svelte';
-
-  import { MENU } from '../const/menu'
-  import PAGE from '../const/page';
+  /* Components */
+  import GlobalNavigation from '@/components/GlobalNavigation/index.svelte';
+  /* Const */
+  import { MENU } from '@/const/menu'
+  import PAGE from '@/const/page';
 </script>
 
 <section class="header">

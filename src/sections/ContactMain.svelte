@@ -1,9 +1,12 @@
 <script lang="ts">
-  import H2 from "../components/H2.svelte";
-  import H3 from "../components/H3.svelte";
-  import Button from "../components/Button.svelte";
-	import { CONTACT } from '../const/contact';
+  /* Components */
+  import H2 from "@/components/H2.svelte";
+  import H3 from "@/components/H3.svelte";
+  import Button from "@/components/Button.svelte";
+  /* Const */
+	import { CONTACT } from '@/const/contact';
 
+  /* Methods */
   // TODO: :GA
   const onClick = () => {}
 </script>

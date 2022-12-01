@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* Methods */
   const onClickScroll = () => window.scroll({top: 0, behavior: 'smooth'});
 </script>
 

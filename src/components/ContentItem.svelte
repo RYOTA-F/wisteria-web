@@ -1,6 +1,8 @@
 <script lang="ts">
-  import Button from '../components/Button.svelte'
+  /* Components */
+  import Button from '@/components/Button.svelte'
 
+  /* Props */
   export let href: string = ''
   export let buttonText: string = ''
   export let onClick: () => void = () => {}

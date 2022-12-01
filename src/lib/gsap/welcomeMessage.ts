@@ -1,5 +1,8 @@
 import { gsap } from 'gsap'
 
+/**
+ * ウェルカムメッセージのムーブインアクション
+ */
 export const moveInWelcomeMessage = () => {
   gsap.to('.background-color', {
     duration: 2, //アニメーションの時間の設定

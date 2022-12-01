@@ -1,7 +1,9 @@
 <script lang="ts">
-	import { MENU } from './../../const/menu';
-  import { SLIDE_IN_NAVIGATION } from '../../const/slideInNavigation'
+  /* Const */
+	import { MENU } from '@/const/menu';
+  import { SLIDE_IN_NAVIGATION } from '@/const/slideInNavigation'
 
+  /* Props */
   export let onClickTogggle: () => void
 </script>
 

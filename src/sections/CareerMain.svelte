@@ -1,8 +1,10 @@
 <script lang="ts">
-  import H2 from "../components/H2.svelte";
-  import H3 from "../components/H3.svelte";
-  import CAREER from '../const/career'
-  import Icon from "../components/Icon.svelte";
+  /* Components */
+  import H2 from "@/components/H2.svelte";
+  import H3 from "@/components/H3.svelte";
+  import Icon from "@/components/Icon.svelte";
+  /* Const */
+  import CAREER from '@/const/career'
 </script>
 
 <section id="career_main" class="careerMain">

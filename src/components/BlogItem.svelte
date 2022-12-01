@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* Props */
   export let title: string
   export let url: string
   export let imageSrc: string

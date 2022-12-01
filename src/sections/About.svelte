@@ -1,10 +1,12 @@
 <script lang="ts">
-  import H2 from "../components/H2.svelte";
-  import H3 from "../components/H3.svelte";
-  import ContentItem from "../components/ContentItem.svelte";
+  /* Components */
+  import H2 from "@/components/H2.svelte";
+  import H3 from "@/components/H3.svelte";
+  import ContentItem from "@/components/ContentItem.svelte";
+  /* Const */
+  import ABOUT from '@/const/about'
 
-  import ABOUT from '../const/about'
-
+  /* Methods */
   // TODO: :GA
   const onClick = () => {}
 </script>

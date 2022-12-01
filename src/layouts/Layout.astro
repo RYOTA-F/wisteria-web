@@ -1,15 +1,17 @@
 ---
-import Header from '../sections/Header.svelte'
-import Footer from '../sections/Footer.svelte'
-import ScrollButton from '../components/ScrollButton.svelte'
-
-import Maintenance from './Maintenance.astro'
-import { IS_MAINTENANCE } from '../const/maintenance'
-
+/* Layouts */
+import Maintenance from '@/layouts/Maintenance.astro'
+/* Sections */
+import Header from '@/sections/Header.svelte'
+import Footer from '@/sections/Footer.svelte'
+import ScrollButton from '@/components/ScrollButton.svelte'
+/* Const */
+import { IS_MAINTENANCE } from '@/const/maintenance'
+/* Types */
 export interface Props {
   title: string
 }
-
+/* State */
 const { title } = Astro.props
 ---
 

@@ -1,13 +1,20 @@
 <script lang="ts">
-	import SlideInNavigation from './SlideInNavigation.svelte';
-  import HamburgerMenu from "./HamburgerMenu.svelte";
+  /* Components */
+	import SlideInNavigation from '@/components/GlobalNavigation/SlideInNavigation.svelte'
+  import HamburgerMenu from "@/components/GlobalNavigation/HamburgerMenu.svelte";
+  /* Const */
+  import { HANBURGER_MENU } from '@/const/hamburgerMenu'
+  import { SLIDE_IN_NAVIGATION } from '@/const/slideInNavigation'
+  /* Libs */
+  import { changeActiveClass } from '@/lib/vanilaJS/navigationClass'
 
-  import { HANBURGER_MENU } from '../../const/hamburgerMenu'
-  import { SLIDE_IN_NAVIGATION } from '../../const/slideInNavigation'
-  import { changeActiveClass } from '../../lib/vanilaJS/navigationClass'
-
+  /* State */
   let isOpen = false
 
+  /* Methods */
+  /**
+   * トグルクリックアクション
+   */
   const onClickTogggle = () => {
     changeActiveClass(isOpen, HANBURGER_MENU)
     changeActiveClass(isOpen, SLIDE_IN_NAVIGATION)

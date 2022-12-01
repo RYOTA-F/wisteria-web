@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* Props */
   export let onClick: () => void
   export let href: string | undefined = undefined
 </script>
