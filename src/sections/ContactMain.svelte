@@ -77,7 +77,7 @@
     z-index: -1;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1020px) {
     .contact {
       min-height: calc(100vh - 142px);
       padding: 25% 20px;
@@ -107,6 +107,20 @@
     .buttonLabel {
       margin-top: 28px;
       font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .iconPresentation {
+      height: 160px;
+      top: 60px;
+      left: 20px;
+    }
+
+    .iconContact {
+      width: 160px;
+      bottom: 60px;
+      right: 20px;
     }
   }
 </style>

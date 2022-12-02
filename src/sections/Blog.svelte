@@ -47,6 +47,17 @@
     margin-top: 40px;
   }
 
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .blog {
+      padding: 40px 0;
+    }
+
+    .blogItem {
+      width: 45%;
+      margin: 20px 10px;
+    }
+  }
+
   @media screen and (max-width: 600px) {
     .blog {
       padding: 40px 20px;
