@@ -3,33 +3,33 @@ const BLOG = {
   TITLE_SUB: 'Blog',
   CONTENTS: [
     {
-      TITLE: `【参加者50人Over！】オフライン勉強会・イベントレポート`,
-      IMAGE_SRC: 'dev_guil_event.png',
-      URL: 'https://kosotudev.com/devguil-2022-0625/',
+      TITLE: '参加者30名！【11月12日@新宿】LT＆交流会・イベントレポート',
+      IMAGE_SRC: 'dev_guil_event.webp',
+      URL: 'https://kosotudev.com/devguil-2022-1112/',
     },
     {
       TITLE: `【Lambda × RDS Proxy】LambdaからProxy経由でRDSに接続してみる`,
-      IMAGE_SRC: 'rds.jpeg',
+      IMAGE_SRC: 'rds.webp',
       URL: 'https://kosotudev.com/rds-proxy/',
     },
     {
       TITLE: `【Route53 × WordPress】EC2からXserverへ移管するためのドメイン設定`,
-      IMAGE_SRC: 'route53.jpeg',
+      IMAGE_SRC: 'route53.webp',
       URL: 'https://kosotudev.com/route53-xserver/',
     },
     {
       TITLE: `【EC2】EC2にWordPressブログを構築してみた`,
-      IMAGE_SRC: 'ec2.jpeg',
+      IMAGE_SRC: 'ec2.webp',
       URL: 'https://kosotudev.com/ec2-server/',
     },
     {
       TITLE: `【file-saver】Reactでサーバーを介さずS3のオブジェクトをダウンロードしてみた`,
-      IMAGE_SRC: 'react_file_server.jpeg',
+      IMAGE_SRC: 'react_file_server.webp',
       URL: 'https://kosotudev.com/react-file-saver/',
     },
     {
       TITLE: `【Golang + GORM + MySQL】Go言語のORM「GORM」を使ってみた`,
-      IMAGE_SRC: 'golang.jpeg',
+      IMAGE_SRC: 'golang.webp',
       URL: 'https://kosotudev.com/go-gorm/',
     },
   ],
