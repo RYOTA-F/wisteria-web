@@ -131,7 +131,7 @@
     margin-left: 8px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1020px) {
     .careerMain {
       padding: 40px 10px;
       text-align: center;
@@ -181,6 +181,12 @@
     .iconsContainer {
       flex-wrap: wrap;
       margin-left: 32px;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .years {
+      margin-left: 6%;
     }
   }
 </style>

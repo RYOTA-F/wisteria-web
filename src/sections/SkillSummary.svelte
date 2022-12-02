@@ -50,7 +50,7 @@
     margin-top: 8px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1020px) {
     .title {
       font-size: 18px;
     }
@@ -68,6 +68,12 @@
     .description {
       font-size: 14px;
       text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .description {
+      text-align: center;
     }
   }
 </style>

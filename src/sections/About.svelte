@@ -64,6 +64,24 @@
     margin-top: 24px;
   }
 
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .about {
+      padding: 120px 10px 80px;
+    }
+
+    .description {
+      padding: 0 10%;
+    }
+
+    .itemContainer {
+      padding: 0 10px;
+    }
+
+    .itemIcon {
+      height: 105px;
+    }
+  }
+
   @media screen and (max-width: 600px) {
     .about {
       padding: 40px 0;

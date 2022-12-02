@@ -46,10 +46,11 @@
     transition: border-color .3s;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1019px) {
     .button {
       padding: 12px 30px;
     }
+
     .button__inner {
       margin: 0;
     }

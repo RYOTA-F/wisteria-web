@@ -50,7 +50,28 @@
     margin-top: 8px;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .name {
+      font-size: 18px;
+    }
+
+    .careerSummary {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    .description {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
     .name {
       font-size: 18px;
     }
@@ -68,6 +89,13 @@
     .description {
       font-size: 14px;
       text-align: left;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .description {
+      font-size: 14px;
+      text-align: center;
     }
   }
 </style>

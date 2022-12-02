@@ -67,7 +67,7 @@
     font-weight: 700;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1020px) {
     .skillMain {
       padding: 40px 0;
     }
@@ -91,6 +91,12 @@
 
     .textContainer {
       margin-top: 20px;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .skillMain {
+      padding: 40px 20px;
     }
   }
 </style>
