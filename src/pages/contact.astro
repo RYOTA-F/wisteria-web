@@ -1,0 +1,12 @@
+---
+/* Layouts */
+import Layout from '@/layouts/Layout.astro'
+/* Sections */
+import ContactMain from '@/sections/ContactMain.svelte'
+import DummyHeader from '@/sections/DummyHeader.svelte'
+---
+
+<Layout title="スキル:Wisteria Web" page="/contact">
+  <DummyHeader />
+  <ContactMain client:load />
+</Layout>

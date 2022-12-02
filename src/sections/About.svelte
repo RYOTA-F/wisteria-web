@@ -1,12 +1,14 @@
 <script lang="ts">
-  import H2 from "../components/H2.svelte";
-  import H3 from "../components/H3.svelte";
-  import Icon from '../components/Icon.svelte'
-  import ContentItem from "../components/ContentItem.svelte";
+  /* Components */
+  import H2 from "@/components/H2.svelte"
+  import H3 from "@/components/H3.svelte"
+  import ContentItem from "@/components/ContentItem.svelte"
+  /* Const */
+  import ABOUT from '@/const/sections/about'
 
-  import ABOUT from '../const/about'
-
-  const onClick = () => console.log('移動')
+  /* Methods */
+  // TODO: :GA
+  const onClick = () => {}
 </script>
 
 <section id="about" class="about">
@@ -16,13 +18,15 @@
 
   <div class="itemContainer">
     {#each ABOUT.CONTENTS as content}
-      <ContentItem href={content.BUTTON_LINK} buttonText={content.BUTTON_TEXT} onClick={onClick}>
-        <H3>{content.TITLE}</H3>
-        <div class="itemIcon">
-          <Icon type={content.ICON_TYPE} />
-        </div>
-        <p class="itemDescription">{content.DESCRIPTION}</p>
-      </ContentItem>
+      <div class="contentItemWrapper">
+        <ContentItem href={content.BUTTON_LINK} buttonText={content.BUTTON_TEXT} onClick={onClick}>
+          <H3>{content.TITLE}</H3>
+          <div class="itemIcon">
+            <img src={`icons/${content.ICON_TYPE}.svg`} alt={content.ICON_TYPE} />
+          </div>
+          <p class="itemDescription">{content.DESCRIPTION}</p>
+        </ContentItem>
+      </div>
     {/each}
   </div>
 </section>
@@ -33,7 +37,7 @@
     min-height: calc(100vh - 80px);
     padding: 120px 10% 80px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: rgba(241, 241, 241, 0.5);
   }
 
   .description {
@@ -50,15 +54,42 @@
   }
 
   .itemIcon {
-    width: 100px;
-    height: 100px;
+    max-height:150px;
+    max-width: 150px;
     margin: 16px auto 0;
-    padding: 16px;
-    border-radius: 50%;
-    background-color: rgba(173, 205, 236, 0.2);
+    overflow: hidden;
   }
 
   .itemDescription {
     margin-top: 24px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .about {
+      padding: 40px 0;
+    }
+
+    .description {
+      margin-top: 24px;
+      padding: 0 20px;
+      white-space: pre-wrap;
+      font-size: 14px;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    .itemContainer {
+      display: block;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+
+    .contentItemWrapper:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    .itemDescription {
+      margin-top: 12px;
+    }
   }
 </style>

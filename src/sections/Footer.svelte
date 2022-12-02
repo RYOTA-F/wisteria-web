@@ -1,8 +1,14 @@
 <script lang="ts">
-  import { MENU } from "../const/menu";
+  /* Const */
+  import { MENU } from "@/const/menu"
+  import COLOR from "@src/const/color"
 </script>
 
-<section class="footer">
+<section
+  class="footer"
+  style:color={COLOR.THEME.WHITE_GROUP.WHITE}
+  style:background-color={COLOR.THEME.BLUE_GROUP.TYPE3}
+>
   <ul class="footerMenu__list">
     {#each MENU as item}
       <li class="footerMenu__item">
@@ -18,8 +24,6 @@
 <style>
   .footer {
     padding: 30px 0 0;
-    color: #fff;
-    background-color: #5e6c77;
     text-align: center;
   }
 
@@ -45,5 +49,30 @@
 
   .copy {
     padding: 24px 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    .footer {
+      padding: 20px 0 0;
+    }
+
+    .footerMenu__list {
+      flex-wrap: wrap;
+      padding: 0 10px;
+    }
+
+    .footerMenu__item {
+      padding: 0 10px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .footerMenu__item:nth-child(4) {
+      border-left: 1.5px solid #fff;
+    }
+
+    .copy {
+      padding: 20px 0 10px;
+    }
   }
 </style>

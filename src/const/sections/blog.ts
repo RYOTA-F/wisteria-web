@@ -35,4 +35,11 @@ const BLOG = {
   ],
 } as const
 
+export const BUTTON = {
+  TEXT: 'ブログトップはこちらから',
+  HREF: 'https://kosotudev.com/',
+  // TODO: :GA
+  ON_CLICK: () => {},
+} as const
+
 export default BLOG

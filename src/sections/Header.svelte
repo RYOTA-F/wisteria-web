@@ -1,26 +1,45 @@
 <script lang="ts">
-  import { MENU } from '../const/menu'
-  import PAGE from '../const/page';
+  /* Components */
+  import GlobalNavigation from '@/components/GlobalNavigation/index.svelte'
+  /* Const */
+  import { MENU } from '@/const/menu'
+  import PAGE from '@/const/page'
+  import SCROLL_Y from "@src/const/scrollY"
+  /* Types */
+  import type { TPage } from '@/types/page'
+
+  /* State */
+  let scrollY: number
+
+  export let page: TPage
 </script>
 
-<section class="header">
-  <div class="headerContainer">
-    <a href={PAGE.TOP.PATH}>
-      <div class="logoWrapper">
-        <img src="icons/svelte.png" alt="logo" class="logo" />
-      </div>
-    </a>
-    <ul class="menuList">
-      {#each MENU as item}
-        <li class="menuItem">
-          <a href={item.ID} class="menuLink">
-            {item.TITLE}
-          </a>
-        </li>
-      {/each}
-    </ul>
-  </div>
-</section>
+<svelte:window bind:scrollY={scrollY}/>
+
+{#if scrollY > SCROLL_Y || page !== '/'}
+  <section class="header">
+    <div class="headerContainer">
+      <a href={PAGE.TOP.PATH}>
+        <div class="logoWrapper">
+          <img src="favicon.svg" alt="logo" class="logo" />
+        </div>
+      </a>
+      <ul class="menuList">
+        {#each MENU as item}
+          <li class="menuItem">
+            <a href={item.ID} class="menuLink">
+              {item.TITLE}
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </div>
+
+    <div class="globalNavigationWrapper">
+      <GlobalNavigation />
+    </div>
+  </section>
+{/if}
 
 <style>
   .header {
@@ -47,11 +66,9 @@
   }
 
   .logo {
-    border-radius: 50%;
     height: 60px;
     width: 60px;
     padding: 5px;
-    background-color: #f1f1f1;
   }
 
   .menuList {
@@ -76,7 +93,7 @@
   .menuItem:hover {
     cursor: pointer;
     color: #fff;
-    background-color: #709dd8;
+    background-color: #0c328c;
   }
 
   .menuLink {
@@ -88,4 +105,18 @@
     padding: 0 15px;
   }
 
+  @media screen and (min-width: 600px) {
+    .globalNavigationWrapper {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .header {
+      background-color: transparent;
+    }
+    .headerContainer {
+      display: none;
+    }
+  }
 </style>

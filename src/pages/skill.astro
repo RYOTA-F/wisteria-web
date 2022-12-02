@@ -1,0 +1,16 @@
+---
+/* Layouts */
+import Layout from '@/layouts/Layout.astro'
+/* Sections */
+import SkillSummary from '@/sections/SkillSummary.svelte'
+import SkillMain from '@/sections/SkillMain.svelte'
+import Contact from '@/sections/Contact.svelte'
+import DummyHeader from '@src/sections/DummyHeader.svelte'
+---
+
+<Layout title="スキル:Wisteria Web" page="/skill">
+  <DummyHeader />
+  <SkillSummary />
+  <SkillMain client:load />
+  <Contact client:load />
+</Layout>

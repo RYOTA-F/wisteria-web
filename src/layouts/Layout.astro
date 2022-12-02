@@ -1,16 +1,22 @@
 ---
-import Header from '../sections/Header.svelte'
-import Footer from '../sections/Footer.svelte'
-import ScrollButton from '../components/ScrollButton.svelte'
-
-import Maintenance from './Maintenance.astro'
-import { IS_MAINTENANCE } from '../const/maintenance'
+/* Layouts */
+import Maintenance from '@/layouts/Maintenance.astro'
+/* Sections */
+import Header from '@/sections/Header.svelte'
+import Footer from '@/sections/Footer.svelte'
+import ScrollButton from '@/components/ScrollButton.svelte'
+/* Const */
+import { IS_MAINTENANCE } from '@/const/sections/maintenance'
+/* Types */
+import type { TPage } from '@/types/page'
 
 export interface Props {
   title: string
+  page: TPage
 }
-
+/* State */
 const { title } = Astro.props
+const { page } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -26,20 +32,15 @@ const { title } = Astro.props
     {IS_MAINTENANCE ?
       <Maintenance title="Wisteria Web" />
     :
-      <Header />
-      <div class="headerBackground"></div>
-      <slot />
+      <Header page={page} client:load />
+      <main>
+        <slot />
+      </main>
       <Footer />
       <ScrollButton client:load />
     }
 
     <style>
-      .headerBackground {
-        height: 80px;
-        width: 80px;
-        content: ' ';
-        background-color: #fff;
-      }
     </style>
 
     <style is:global>

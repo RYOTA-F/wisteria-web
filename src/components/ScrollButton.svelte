@@ -1,10 +1,20 @@
 <script lang="ts">
+  /* Const */
+  import SCROLL_Y from "@src/const/scrollY"
+  /* Methods */
   const onClickScroll = () => window.scroll({top: 0, behavior: 'smooth'});
+
+  /* State */
+  let scrollY: number
 </script>
 
-<button on:click={onClickScroll} class="scrollButton">
-  <div class="scrollButton__innnerArrow" />
-</button>
+<svelte:window bind:scrollY={scrollY}/>
+
+{#if scrollY > SCROLL_Y}
+  <button on:click={onClickScroll} class="scrollButton">
+    <div class="scrollButton__innnerArrow" />
+  </button>
+{/if}
 
 <style>
   .scrollButton {
@@ -16,7 +26,7 @@
     border: none;
     border-radius: 50%;
     color: #fff;
-    background-color: #709dd8;
+    background-color: #0c328c;
     cursor: pointer;
   }
   .scrollButton:hover {
@@ -24,7 +34,7 @@
     transition: 0.2s;
   }
   .scrollButton:hover > div {
-    border-color: #709dd8;
+    border-color: #0c328c;
   }
 
   .scrollButton__innnerArrow {
@@ -40,5 +50,14 @@
     border-bottom: 4px solid #fff;
     border-left: 4px solid #fff;
     transform: rotate(135deg);
+  }
+
+  @media screen and (max-width: 600px) {
+    .scrollButton {
+      bottom: 10px;
+      right: 10px;
+      width: 40px;
+      height: 40px;
+    }
   }
 </style>

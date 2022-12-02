@@ -1,0 +1,16 @@
+---
+/* Layouts */
+import Layout from '@/layouts/Layout.astro'
+/* sections */
+import CareerMain from '@/sections/CareerMain.svelte'
+import CareerSummary from '@/sections/CareerSummary.svelte'
+import Contact from '@/sections/Contact.svelte'
+import DummyHeader from '@src/sections/DummyHeader.svelte'
+---
+
+<Layout title="経歴:Wisteria Web" page="/career">
+  <DummyHeader />
+  <CareerSummary />
+  <CareerMain />
+  <Contact client:load />
+</Layout>

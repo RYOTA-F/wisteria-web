@@ -1,4 +1,5 @@
 <script lang="ts">
+  /* Props */
   export let onClick: () => void
   export let href: string | undefined = undefined
 </script>
@@ -15,13 +16,13 @@
   .button {
     padding: 16px 40px;
     color: #fff;
-    background-color: #709dd8;
+    background-color: #0c328c;
     border-radius: 9999px;
     position: relative;
   }
   .button:hover {
     cursor: pointer;
-    color: #709dd8;
+    color: #0c328c;
     background-color: #fff;
     transition: 0.5s;
   }
@@ -43,5 +44,18 @@
     transform: rotate(225deg);
     transition: border-color .3s,transform .3s;
     transition: border-color .3s;
+  }
+
+  @media screen and (max-width: 600px) {
+    .button {
+      padding: 12px 30px;
+    }
+    .button__inner {
+      margin: 0;
+    }
+
+    .button__inner:after {
+      display: none;
+    }
   }
 </style>

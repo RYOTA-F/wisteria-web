@@ -1,52 +1,64 @@
-<script lang="ts">
-  import MAIN from '../const/main'
+<script lang="ts" type="module">
+	import { onMount } from 'svelte'
+  /* Const */
+  import MAIN from '@src/const/sections/main'
+  import COLOR from '@src/const/color'
+  /* Libs */
+  import { moveInWelcomeMessage } from '@/lib/gsap/welcomeMessage'
+
+  onMount(() => {
+    moveInWelcomeMessage()
+  })
 </script>
 
-<section id="main" class="main">
-  <p class="typewriter__text typewriter__animation" >
-    {MAIN.WELCOME}
-    <span class="siteName">{MAIN.TITLE}</span>
-    {MAIN.EXCLAMATION}
-  </p>
+<section
+  id="main"
+  class="main"
+  style:background={`linear-gradient(${COLOR.THEME.BLUE_GROUP.TYPE1}, ${COLOR.THEME.BLUE_GROUP.TYPE2}, ${COLOR.THEME.BLUE_GROUP.TYPE4}, ${COLOR.THEME.BLUE_GROUP.TYPE2}, ${COLOR.THEME.BLUE_GROUP.TYPE1})`}
+>
+  <div  class="title">
+    <h1 class="text" style:color={COLOR.THEME.WHITE_GROUP.WHITE}>{MAIN.WELCOME}</h1>
+  </div>
+  <h1 class="title">
+    {#each MAIN.TITLE  as item }
+      <span style:color={COLOR.THEME.WHITE_GROUP.WHITE}>{item}</span>
+    {/each}
+  </h1>
 </section>
 
 <style>
   .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     height: 100vh;
     padding-top: 80px;
-    background-color: #709dd8;
-    color: #fff;
-  }
-
-  .typewriter__text{
     position: relative;
-    border-right: 2px solid rgba(255,255,255,.75);
+  }
+
+  h1 {
     font-size: 70px;
+    letter-spacing: 1px;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
   }
 
-  /* Animation */
-  .typewriter__animation{
-    animation: typewriter 4s steps(44) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
+  .text {
+    opacity: 0;
+    transform: translateY(20px);
   }
 
-  /* .siteName {
-    color: #709dd8;
-  } */
-  @keyframes typewriter{
-    from{width: 0;}
-    to{width: 24em;}
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
-  @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
-    to{border-right-color: transparent;}
+
+  .title span {
+    opacity: 0;
+  }
+
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 32px;
+    }
   }
 </style>

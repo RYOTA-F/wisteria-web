@@ -11,6 +11,10 @@ const PAGE = {
     PATH: '/skill',
     TITLE: 'スキル',
   },
+  CONTACT: {
+    PATH: '/contact',
+    TITLE: 'お問合せ',
+  },
 } as const
 
 export default PAGE

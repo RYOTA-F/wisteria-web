@@ -1,7 +1,6 @@
 const MAIN = {
   WELCOME: 'Welcome to',
-  TITLE: 'Wisteria Web',
-  EXCLAMATION: '!',
+  TITLE: 'Wisteria Web ',
 } as const
 
 export default MAIN
