@@ -1,6 +1,6 @@
 <script lang="ts">
   /* Const */
-	import { MENU } from '@/const/menu';
+	import { MENU } from '@/const/menu'
   import { SLIDE_IN_NAVIGATION } from '@/const/globalNavigation/slideInNavigation'
 
   /* Props */
@@ -25,7 +25,7 @@
     right: -120%;
     width:100%;
     height: 100%;
-    background:#427bbf;
+    background:#0c328c;
     transition: all 0.6s;
   }
 

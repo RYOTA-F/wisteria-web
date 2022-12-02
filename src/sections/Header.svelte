@@ -1,33 +1,41 @@
 <script lang="ts">
   /* Components */
-  import GlobalNavigation from '@/components/GlobalNavigation/index.svelte';
+  import GlobalNavigation from '@/components/GlobalNavigation/index.svelte'
   /* Const */
   import { MENU } from '@/const/menu'
-  import PAGE from '@/const/page';
+  import PAGE from '@/const/page'
+  import SCROLL_Y from "@src/const/scrollY"
+
+  /* State */
+  let scrollY: number
 </script>
 
-<section class="header">
-  <div class="headerContainer">
-    <a href={PAGE.TOP.PATH}>
-      <div class="logoWrapper">
-        <img src="favicon.svg" alt="logo" class="logo" />
-      </div>
-    </a>
-    <ul class="menuList">
-      {#each MENU as item}
-        <li class="menuItem">
-          <a href={item.ID} class="menuLink">
-            {item.TITLE}
-          </a>
-        </li>
-      {/each}
-    </ul>
-  </div>
+<svelte:window bind:scrollY={scrollY}/>
 
-  <div class="globalNavigationWrapper">
-    <GlobalNavigation />
-  </div>
-</section>
+{#if scrollY > SCROLL_Y}
+  <section class="header">
+    <div class="headerContainer">
+      <a href={PAGE.TOP.PATH}>
+        <div class="logoWrapper">
+          <img src="favicon.svg" alt="logo" class="logo" />
+        </div>
+      </a>
+      <ul class="menuList">
+        {#each MENU as item}
+          <li class="menuItem">
+            <a href={item.ID} class="menuLink">
+              {item.TITLE}
+            </a>
+          </li>
+        {/each}
+      </ul>
+    </div>
+
+    <div class="globalNavigationWrapper">
+      <GlobalNavigation />
+    </div>
+  </section>
+{/if}
 
 <style>
   .header {
@@ -81,7 +89,7 @@
   .menuItem:hover {
     cursor: pointer;
     color: #fff;
-    background-color: #427bbf;
+    background-color: #0c328c;
   }
 
   .menuLink {

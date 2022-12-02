@@ -1,9 +1,9 @@
 <script lang="ts">
   /* Components */
-  import H2 from "@/components/H2.svelte";
-  import H3 from "@/components/H3.svelte";
-  import Icon from "@/components/Icon.svelte";
-  import ContentItem from "@/components/ContentItem.svelte";
+  import H2 from "@/components/H2.svelte"
+  import H3 from "@/components/H3.svelte"
+  import Icon from "@/components/Icon.svelte"
+  import ContentItem from "@/components/ContentItem.svelte"
   /* Const */
   import { SKILL_MAIN } from '@src/const/sections/skill'
 </script>

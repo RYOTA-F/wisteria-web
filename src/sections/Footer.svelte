@@ -1,6 +1,6 @@
 <script lang="ts">
   /* Const */
-  import { MENU } from "@/const/menu";
+  import { MENU } from "@/const/menu"
 </script>
 
 <section class="footer">

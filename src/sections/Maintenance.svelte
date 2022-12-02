@@ -1,6 +1,6 @@
 <script lang="ts">
   /* Const */
-  import MAINTENANCE from "@src/const/sections/maintenance";
+  import MAINTENANCE from "@src/const/sections/maintenance"
 </script>
 
 <section id="maintenance" class="maintenance">

@@ -1,9 +1,15 @@
 <script lang="ts">
   /* Const */
   import CAREER from '@/const/sections/career'
+  import COLOR from '@src/const/color'
 </script>
 
-<section id="career_summary" class="careerSummary">
+<section
+  id="career_summary"
+  class="careerSummary"
+  style:color={COLOR.THEME.WHITE_GROUP.WHITE}
+  style:background={`linear-gradient(${COLOR.THEME.BLUE_GROUP.TYPE2}, ${COLOR.THEME.BLUE_GROUP.TYPE3}, ${COLOR.THEME.BLUE_GROUP.TYPE2})`}
+>
   <div class="container">
     <h2 class="name">{CAREER.NAME}</h2>
     {#each CAREER.SUMMARY as items }
@@ -20,13 +26,10 @@
   .careerSummary {
     width: 100%;
     padding: 40px 0;
-    color: #fff;
-    background-color: #427bbf;
     text-align: left;
   }
 
   .name {
-    color: #fff;
     font-size: 22px;
     font-weight: 700;
   }
@@ -48,6 +51,10 @@
   }
 
   @media screen and (max-width: 600px) {
+    .name {
+      font-size: 18px;
+    }
+
     .careerSummary {
       padding: 20px;
       text-align: center;

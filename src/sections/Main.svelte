@@ -1,8 +1,8 @@
 <script lang="ts" type="module">
-	import { onMount } from 'svelte';
+	import { onMount } from 'svelte'
   /* Const */
   import MAIN from '@src/const/sections/main'
-  import COLOR from '@src/const/color';
+  import COLOR from '@src/const/color'
   /* Libs */
   import { moveInWelcomeMessage } from '@/lib/gsap/welcomeMessage'
 
@@ -18,7 +18,6 @@
 >
   <div  class="title">
     <h1 class="text" style:color={COLOR.THEME.WHITE_GROUP.WHITE}>{MAIN.WELCOME}</h1>
-    <p class="text" style:color={COLOR.THEME.WHITE_GROUP.WHITE}>{MAIN.WELCOME_SUB}</p>
   </div>
   <h1 class="title">
     {#each MAIN.TITLE  as item }

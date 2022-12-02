@@ -1,10 +1,10 @@
 <script lang="ts">
   /* Components */
-  import H2 from "@/components/H2.svelte";
-  import H3 from "@/components/H3.svelte";
-  import Button from "@/components/Button.svelte";
+  import H2 from "@/components/H2.svelte"
+  import H3 from "@/components/H3.svelte"
+  import Button from "@/components/Button.svelte"
   /* Const */
-	import { CONTACT } from '@/const/sections/contact';
+	import { CONTACT } from '@/const/sections/contact'
 
   /* Methods */
   // TODO: :GA

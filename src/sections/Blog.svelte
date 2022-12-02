@@ -1,11 +1,11 @@
 <script lang="ts">
   /* Components */
-  import H2 from "@/components/H2.svelte";
-  import H3 from "@/components/H3.svelte";
-  import BlogItem from "@/components/BlogItem.svelte";
-  import Button from "@/components/Button.svelte";
+  import H2 from "@/components/H2.svelte"
+  import H3 from "@/components/H3.svelte"
+  import BlogItem from "@/components/BlogItem.svelte"
+  import Button from "@/components/Button.svelte"
   /* Const */
-  import BLOG, { BUTTON } from "@/const/sections/blog";
+  import BLOG, { BUTTON } from "@/const/sections/blog"
 </script>
 
 <section id="blog" class="blog">

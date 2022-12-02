@@ -1,8 +1,8 @@
 <script lang="ts">
   /* Components */
-  import H2 from "@/components/H2.svelte";
-  import H3 from "@/components/H3.svelte";
-  import Icon from "@/components/Icon.svelte";
+  import H2 from "@/components/H2.svelte"
+  import H3 from "@/components/H3.svelte"
+  import Icon from "@/components/Icon.svelte"
   /* Const */
   import CAREER from '@/const/sections/career'
 </script>
@@ -65,7 +65,7 @@
   .treeContainer:before {
     position: absolute;
     width: 3px;
-    background: #427bbf;
+    background: #0c328c;
     top: 0px;
     left: 0.75rem;
     margin-left: 30%;
@@ -95,7 +95,7 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #427bbf;
+    background: #0c328c;
   }
 
   .careerItem {

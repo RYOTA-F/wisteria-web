@@ -1,9 +1,15 @@
 <script lang="ts">
   /* Const */
   import { SKILL } from '@src/const/sections/skill'
+  import COLOR from '@src/const/color'
 </script>
 
-<section id="skill_summary" class="skillSummary">
+<section
+  id="skill_summary"
+  class="skillSummary"
+  style:color={COLOR.THEME.WHITE_GROUP.WHITE}
+  style:background={`linear-gradient(${COLOR.THEME.BLUE_GROUP.TYPE2}, ${COLOR.THEME.BLUE_GROUP.TYPE3}, ${COLOR.THEME.BLUE_GROUP.TYPE2})`}
+>
   <div class="container">
     <h2 class="title">{SKILL.TITLE}</h2>
     {#each SKILL.DESCRIPTION as items }
@@ -20,8 +26,6 @@
   .skillSummary {
     width: 100%;
     padding: 40px 0;
-    color: #fff;
-    background-color: #427bbf;
     text-align: left;
   }
 
@@ -31,7 +35,6 @@
   }
 
   .title {
-    color: #fff;
     font-size: 22px;
     font-weight: 700;
   }
@@ -48,6 +51,10 @@
   }
 
   @media screen and (max-width: 600px) {
+    .title {
+      font-size: 18px;
+    }
+
     .skillSummary {
       padding: 20px;
       text-align: center;

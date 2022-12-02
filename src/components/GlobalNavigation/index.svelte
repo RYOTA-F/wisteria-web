@@ -1,7 +1,7 @@
 <script lang="ts">
   /* Components */
 	import SlideInNavigation from '@/components/GlobalNavigation/SlideInNavigation.svelte'
-  import HamburgerMenu from "@/components/GlobalNavigation/HamburgerMenu.svelte";
+  import HamburgerMenu from "@/components/GlobalNavigation/HamburgerMenu.svelte"
   /* Const */
   import { HANBURGER_MENU } from '@src/const/globalNavigation/hamburgerMenu'
   import { SLIDE_IN_NAVIGATION } from '@/const/globalNavigation/slideInNavigation'
