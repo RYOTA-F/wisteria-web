@@ -40,11 +40,6 @@
     text-align: center;
   }
 
-  p {
-    font-size: 24px;
-    text-align: center;
-  }
-
   .text {
     opacity: 0;
     transform: translateY(20px);
@@ -64,10 +59,6 @@
   @media screen and (max-width: 600px) {
     h1 {
       font-size: 32px;
-    }
-
-    p {
-      font-size: 24px;
     }
   }
 </style>

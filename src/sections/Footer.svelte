@@ -1,9 +1,14 @@
 <script lang="ts">
   /* Const */
   import { MENU } from "@/const/menu"
+  import COLOR from "@src/const/color"
 </script>
 
-<section class="footer">
+<section
+  class="footer"
+  style:color={COLOR.THEME.WHITE_GROUP.WHITE}
+  style:background-color={COLOR.THEME.BLUE_GROUP.TYPE3}
+>
   <ul class="footerMenu__list">
     {#each MENU as item}
       <li class="footerMenu__item">
@@ -19,8 +24,6 @@
 <style>
   .footer {
     padding: 30px 0 0;
-    color: #fff;
-    background-color: #5e6c77;
     text-align: center;
   }
 

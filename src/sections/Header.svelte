@@ -5,14 +5,18 @@
   import { MENU } from '@/const/menu'
   import PAGE from '@/const/page'
   import SCROLL_Y from "@src/const/scrollY"
+  /* Types */
+  import type { TPage } from '@/types/page'
 
   /* State */
   let scrollY: number
+
+  export let page: TPage
 </script>
 
 <svelte:window bind:scrollY={scrollY}/>
 
-{#if scrollY > SCROLL_Y}
+{#if scrollY > SCROLL_Y || page !== '/'}
   <section class="header">
     <div class="headerContainer">
       <a href={PAGE.TOP.PATH}>

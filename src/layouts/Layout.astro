@@ -8,11 +8,15 @@ import ScrollButton from '@/components/ScrollButton.svelte'
 /* Const */
 import { IS_MAINTENANCE } from '@/const/sections/maintenance'
 /* Types */
+import type { TPage } from '@/types/page'
+
 export interface Props {
   title: string
+  page: TPage
 }
 /* State */
 const { title } = Astro.props
+const { page } = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -28,7 +32,7 @@ const { title } = Astro.props
     {IS_MAINTENANCE ?
       <Maintenance title="Wisteria Web" />
     :
-      <Header client:load />
+      <Header page={page} client:load />
       <main>
         <slot />
       </main>
