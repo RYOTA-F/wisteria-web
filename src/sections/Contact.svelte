@@ -76,6 +76,20 @@
     z-index: -1;
   }
 
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .iconPresentation {
+      height: 120px;
+      top: 60px;
+      left: 20px;
+    }
+
+    .iconContact {
+      height: 120px;
+      bottom: 60px;
+      right: 20px;
+    }
+  }
+
   @media screen and (max-width: 600px) {
     .contact {
       padding: 40px 20px;

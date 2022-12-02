@@ -105,9 +105,31 @@
     padding: 0 15px;
   }
 
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 1020px) {
     .globalNavigationWrapper {
       display: none;
+    }
+  }
+
+  @media screen and (min-width: 601px) and (max-width: 1019px) {
+    .globalNavigationWrapper {
+      display: none;
+    }
+
+    .headerContainer {
+      width: 90%;
+    }
+
+    .menuList {
+      width: 90%;
+    }
+
+    .menuItem {
+      font-size: 12px;
+    }
+
+    .menuLink {
+      padding: 0 10px;
     }
   }
 
