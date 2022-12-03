@@ -25,16 +25,20 @@ const { page } = Astro.props
   <head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <meta property="og:title" content={META_DATA.TITLE} />
-    <meta property="og:description" content={META_DATA.DESCRIPTION} />
-    <meta property="og:image" content={META_DATA.IMAGE_URL} />
+    <meta name="description" content={META_DATA.DESCRIPTION} />
+    <meta property="og:site_name" content={META_DATA.OG.SITE_NAME}>
+    <meta property="og:type" content={META_DATA.OG.TYPE}>
+    <meta property="og:title" content={META_DATA.OG.TITLE} />
+    <meta property="og:description" content={META_DATA.OG.DESCRIPTION} />
+    <meta property="og:image" content={META_DATA.OG.IMAGE_URL} />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={META_DATA.CANONICAL} />
     <title>{title}</title>
   </head>
   <body>
     {IS_MAINTENANCE ?
-      <Maintenance title={META_DATA.TITLE} />
+      <Maintenance title={META_DATA.OG.TITLE} />
     :
       <Header page={page} client:load />
       <main>
