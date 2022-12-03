@@ -21,11 +21,14 @@ const { page } = Astro.props
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content="Wisteria Web" />
+    <meta property="og:description" content="フリーランスエンジニアRYOTAのポートフォリオサイト" />
+    <meta property="og:image" content="https://www.teikyo.ed.jp/wp/wp-content/themes/teikyo2018/images/test.jpg" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
   <body>
