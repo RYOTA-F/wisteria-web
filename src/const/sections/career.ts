@@ -264,8 +264,9 @@ const ITEMS = [
         MONTH: '12月',
         TITLE: '「 Wisteria Web  」開発(当サイト)',
         DESCRIPTIONS: [
-          'モダンなJavaScriptフレームワークで開発',
-          '「Astro」をベースにコンポーネントを「Svelte」で構成',
+          'モダンなJavaScriptフレームワークを用いて開発',
+          '「Svelte」でコンポーネントを作成',
+          '「Astro」で静的サイトを生成',
           '「Cloudflare」にデプロイすることで高速な配信を実現',
         ],
         ICONS: ['typescript', 'astro', 'svelte', 'cloudflare'],
