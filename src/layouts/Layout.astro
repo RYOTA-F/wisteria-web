@@ -6,6 +6,7 @@ import Header from '@/sections/Header.svelte'
 import Footer from '@/sections/Footer.svelte'
 import ScrollButton from '@/components/ScrollButton.svelte'
 /* Const */
+import META_DATA from '@src/const/meta'
 import { IS_MAINTENANCE } from '@/const/sections/maintenance'
 /* Types */
 import type { TPage } from '@/types/page'
@@ -21,16 +22,19 @@ const { page } = Astro.props
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head prefix="og: https://ogp.me/ns#">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content={META_DATA.TITLE} />
+    <meta property="og:description" content={META_DATA.DESCRIPTION} />
+    <meta property="og:image" content={META_DATA.IMAGE_URL} />
     <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
   </head>
   <body>
     {IS_MAINTENANCE ?
-      <Maintenance title="Wisteria Web" />
+      <Maintenance title={META_DATA.TITLE} />
     :
       <Header page={page} client:load />
       <main>
