@@ -1,4 +1,4 @@
-export const IS_MAINTENANCE = false
+export const IS_MAINTENANCE = true
 
 const MAINTENANCE = {
   TITLE: 'COMING SOON...',
