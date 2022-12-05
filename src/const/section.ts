@@ -23,6 +23,10 @@ const SECTION = {
     TITLE: 'ブログ',
     ID: '#blog',
   },
+  DOCUMENT: {
+    TITLE: '登壇資料',
+    ID: '#document',
+  },
   CONTACT: {
     TITLE: 'お問合せ',
     ID: '#contact',
