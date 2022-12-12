@@ -5,6 +5,7 @@ import Layout from '@/layouts/Layout.astro'
 import Main from '@/sections/Main.svelte'
 import About from '@/sections/About.svelte'
 import Blog from '@/sections/Blog.svelte'
+import Document from '@src/sections/Document.svelte'
 import Contact from '@/sections/Contact.svelte'
 ---
 
@@ -12,5 +13,6 @@ import Contact from '@/sections/Contact.svelte'
   <Main client:load />
   <About client:load />
   <Blog />
+  <Document client:load />
   <Contact client:load />
 </Layout>
