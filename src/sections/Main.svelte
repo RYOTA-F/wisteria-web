@@ -3,6 +3,7 @@
   /* Const */
   import MAIN from '@src/const/sections/main'
   import COLOR from '@src/const/color'
+  import { MENU_LIST } from '@src/const/menu'
   /* Libs */
   import { moveInWelcomeMessage } from '@/lib/gsap/welcomeMessage'
 
@@ -24,6 +25,10 @@
       <span style:color={COLOR.THEME.WHITE_GROUP.WHITE}>{item}</span>
     {/each}
   </h1>
+
+  <div class="scroll">
+    <a href={MENU_LIST.ABOUT.ID} class="scrollDown"><span>{MAIN.SCROLL}</span></a>
+  </div>
 </section>
 
 <style>
@@ -54,6 +59,69 @@
 
   .title span {
     opacity: 0;
+  }
+
+  .scroll {
+    opacity: 0;
+  }
+
+  /*スクロールダウン全体の場所*/
+  .scrollDown{
+    display: block;
+    position: absolute;
+    bottom: 1%;
+    right:50%;
+    animation: arrowmove 1s ease-in-out infinite;
+    cursor: pointer;
+  }
+
+  /*下からの距離が変化して全体が下→上→下に動く*/
+  @keyframes arrowmove{
+    0%{bottom:1%;}
+    50%{bottom:3%;}
+    100%{bottom:1%;}
+  }
+
+  /*Scrollテキストの描写*/
+  .scrollDown span{
+    /*描画位置*/
+    position: absolute;
+    left:-20px;
+    bottom:10px;
+    /*テキストの形状*/
+    color: #eee;
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    /*縦書き設定*/
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+  }
+
+  /* 矢印の描写 */
+  .scrollDown:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #eee;
+    transform: skewX(-31deg);
+  }
+
+  .scrollDown:after{
+    content:"";
+    /*描画位置*/
+    position: absolute;
+    bottom:0;
+    right:0;
+    /*矢印の形状*/
+    width:1px;
+    height: 50px;
+    background:#eee;
   }
 
   @media screen and (max-width: 600px) {
