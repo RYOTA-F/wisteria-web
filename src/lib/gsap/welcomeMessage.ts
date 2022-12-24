@@ -25,4 +25,10 @@ export const moveInWelcomeMessage = () => {
       from: 'start',
     },
   })
+
+  gsap.to('.scroll', {
+    delay: 7,
+    duration: 2,
+    opacity: 1,
+  })
 }
